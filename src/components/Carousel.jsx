@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import carousel1 from "../assets/carousel1.jpg";
 import carousel2 from "../assets/carousel2.jpg";
-import carousel3 from "../assets/carousel3.jpg";
+import carousel3 from "../assets/carousel3.jpeg";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
@@ -10,12 +10,47 @@ export const Carousel = () => {
   const slideImages = [
     {
       imgUrl: carousel1,
+      content: {
+        title: (
+          <>
+            Fortalece tu empresa, somos la{" "}
+            <span className="text-emerald-400">clave</span> para tener un
+            entorno laboral más seguro.
+          </>
+        ),
+        subTitle:
+          "Desarrolla las destrezas de tus empleados para liderar en seguridad laboral utilizando la era digital.",
+        buttonTitle: "Comunícate con nosotros",
+      },
     },
     {
       imgUrl: carousel2,
+      content: {
+        title: (
+          <>
+            "Somos una <span className="text-emerald-400">OTEC</span> chilena
+            acreditada por <span className="text-emerald-400">Sence</span> y
+            certificada según la norma n°2728 para garantizar una{" "}
+            <span className="text-emerald-400">calidad de excelencia.</span>"
+          </>
+        ),
+        subTitle:
+          "Transformamos vidas a través del conocimiento y la experiencia e impulsamos tu crecimiento profesional y emprendedor",
+      },
     },
     {
       imgUrl: carousel3,
+      content: {
+        title: (
+          <>
+            "Potencia tu empresa con los métodos más{" "}
+            <span className="text-emerald-400">sostenibles</span>, interactivos
+            y <span className="text-emerald-400">avanzados</span> del mercado."
+          </>
+        ),
+        subTitle:
+          "Se parte de cómo los métodos avanzados y sostenibles en prevención de riesgos pueden impulsar el éxito de tu empresa.",
+      },
     },
   ];
 
@@ -48,7 +83,7 @@ export const Carousel = () => {
           style={{
             backgroundImage: `url(${slideImages[currentIndex].imgUrl})`,
           }}
-          className="w-auto h-full lg:mx-10 md:rounded-2xl bg-center bg-cover duration-500 md:shadow-xl"
+          className="w-auto h-full lg:mx-10 md:rounded-2xl bg-top bg-cover duration-500 md:shadow-xl"
         ></div>
 
         {/* flecha izquierda */}
@@ -60,23 +95,23 @@ export const Carousel = () => {
         <div className="hidden group-hover:block absolute z-40 top-[50%] -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-black/20 cursor-pointer">
           <SlArrowRight onClick={nextSlide} className="w-5 h-5 text-white/60" />
         </div>
-        <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%] pt-5 bg-slate-950/30 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
-          <div className="mt-36 ml-16 w-full">
-            <p className="font-bold text-left text-white w-3/4 text-5xl font-overPass">
-              Transformamos vidas a través del conocimiento y experiencia.
+        <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%] pt-5 bg-slate-950/60 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
+          <div className="mt-36 ml-16 max-md:ml-5 w-full">
+            <p className="font-bold text-left text-white w-3/4 text-5xl font-overPass max-md:text-4xl">
+              {slideImages[currentIndex].content.title}
             </p>
-            <p className="mt-10 font-bold text-left text-white w-3/4 text-lg font-overPass">
-              Somos un OTEC chileno acreditado por SENCE y certificado según la
-              norma Nch. 2728 para garantizar la calidad. Nuestra misión es
-              impulsar tu crecimiento profesional o emprendedor.
+            <p className="mt-10 font-bold text-left text-white w-3/4 text-lg font-overPass max-md:text-lg">
+              {slideImages[currentIndex].content.subTitle}
             </p>
-            <div className="flex justify-center items-end gap-2">
-              <a href="#">
-                <button className="py-5 mb-3 mr-14 px-5 rounded bg-yellow-400 hover:bg-yellow-300 transition-all duration-400 hover:underline font-light font-custom">
-                  Comunícate con nosotros
-                </button>
-              </a>
-            </div>
+            {currentIndex === 0 && (
+              <div className=" gap-2 mt-10">
+                <a href="#">
+                  <button className="py-5 mb-3 px-5 rounded bg-blue-700 hover:bg-blue-500 transition-all duration-400 hover:underline text-lg font-bold text-white">
+                    {slideImages[currentIndex].content.buttonTitle}
+                  </button>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </section>
