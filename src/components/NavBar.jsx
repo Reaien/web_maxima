@@ -1,9 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import maximaLogo from "../assets/maximaLogo.svg";
-import carousel1 from "../assets/carousel1.jpg";
-import carousel2 from "../assets/carousel2.jpg";
-import carousel3 from "../assets/carousel3.jpg";
 
 export const NavBar = () => {
   const estilo = {
@@ -146,7 +143,7 @@ export const NavBar = () => {
       </header>
 
       <section
-        className={`lg:hidden ${menuVisible ? "" : "hidden"} animate-flip-down animate-duration-[400ms]`}
+        className={`lg:hidden ${menuVisible ? "" : "hidden"} animate-flip-down animate-duration-[400ms] absolute z-10 w-full`}
       >
         <div
           style={estilo}

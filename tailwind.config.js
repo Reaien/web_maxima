@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         custom: ["Nunito"],
+        overPass: ["Overpass"],
       },
     },
   },
