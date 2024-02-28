@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import maximaLogoFull from "../assets/maximaLogoFull.svg";
+import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
 
 export const NavBar = () => {
   const estilo = {
-    // Define los estilos en un objeto JavaScript
     boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.1)",
   };
 
@@ -13,15 +13,21 @@ export const NavBar = () => {
     setMenuVisible(!menuVisible);
   };
 
+  const [menuMovilVisible, setMenuMovilVisible] = useState(false);
+  const toggleMenuMovil = () => {
+    setMenuMovilVisible(!menuMovilVisible);
+  };
+
   return (
     <>
       <header className="bg-white shadow-md h-24 ">
         <div className=" flex items-center justify-between max-w-screen-2xl mx-auto ">
-          <div className="lg:pl-16 xl:pl-36 -mt-5">
-            <img className="w-56" src={maximaLogoFull} alt="logo" />
+          <div className="lg:pl-16 xl:pl-40 -mt-3">
+            <img className="w-48" src={maximaLogoFull} alt="logo" />
           </div>
           <div className="max-lg:hidden flex items-center space-x-4 px-3">
             <button
+              onClick={toggleMenu}
               className="ml-6 hover:text-emerald-600  focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -42,6 +48,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
+              onClick={toggleMenu}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -62,6 +69,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
+              onClick={toggleMenu}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -82,6 +90,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
+              onClick={toggleMenu}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -110,9 +119,10 @@ export const NavBar = () => {
             </a>
           </div>
 
+          {/*Botón movil*/}
           <div className="max-sm:px-5 px-10">
             <button
-              onClick={toggleMenu}
+              onClick={toggleMenuMovil}
               className="lg:hidden flex items-center justify-center rounded-lg border-2 h-10 w-16 border-emerald-700/20 focus:border-emerald-700/70 focus:border-4 transition-colors "
             >
               <svg
@@ -135,7 +145,7 @@ export const NavBar = () => {
       </header>
 
       <section
-        className={`lg:hidden ${menuVisible ? "" : "hidden"} animate-flip-down animate-duration-[400ms] absolute z-10 w-full`}
+        className={`lg:hidden ${menuMovilVisible ? "" : "hidden"} animate-flip-down animate-duration-[400ms] absolute z-10 w-full`}
       >
         <div
           style={estilo}
@@ -163,6 +173,11 @@ export const NavBar = () => {
           </a>
         </div>
       </section>
+      <ToggleMenuXL
+        menuVisible={menuVisible}
+        setMenuVisible={setMenuVisible}
+        titulo="Soluciones"
+      />
     </>
   );
 };

@@ -9,6 +9,22 @@ import { SlArrowRight } from "react-icons/sl";
 export const Carousel = () => {
   const slideImages = [
     {
+      imgUrl: carousel3,
+
+      content: {
+        title: (
+          <>
+            "Potencia tu empresa con los métodos más{" "}
+            <span className="text-emerald-400">sostenibles</span>, interactivos
+            y <span className="text-emerald-400">avanzados</span> del mercado."
+          </>
+        ),
+        subTitle:
+          "Desarrolla las destrezas de tus empleados para liderar en seguridad laboral utilizando la era digital.",
+        buttonTitle: "Comunícate con nosotros",
+      },
+    },
+    {
       imgUrl: carousel1,
       content: {
         title: (
@@ -19,8 +35,7 @@ export const Carousel = () => {
           </>
         ),
         subTitle:
-          "Desarrolla las destrezas de tus empleados para liderar en seguridad laboral utilizando la era digital.",
-        buttonTitle: "Comunícate con nosotros",
+          "Se parte de cómo los métodos avanzados y sostenibles en prevención de riesgos pueden impulsar el éxito de tu empresa.",
       },
     },
     {
@@ -36,20 +51,6 @@ export const Carousel = () => {
         ),
         subTitle:
           "Transformamos vidas a través del conocimiento y la experiencia e impulsamos tu crecimiento profesional y emprendedor",
-      },
-    },
-    {
-      imgUrl: carousel3,
-      content: {
-        title: (
-          <>
-            "Potencia tu empresa con los métodos más{" "}
-            <span className="text-emerald-400">sostenibles</span>, interactivos
-            y <span className="text-emerald-400">avanzados</span> del mercado."
-          </>
-        ),
-        subTitle:
-          "Se parte de cómo los métodos avanzados y sostenibles en prevención de riesgos pueden impulsar el éxito de tu empresa.",
       },
     },
   ];
@@ -78,29 +79,35 @@ export const Carousel = () => {
 
   return (
     <>
-      <section className="w-full h-[768px] mt-4 group">
+      <section className="w-full h-[768px] mt-4 group ">
         <div
           style={{
-            backgroundImage: `url(${slideImages[currentIndex].imgUrl})`,
+            backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
           }}
-          className="w-auto h-full lg:mx-10 md:rounded-2xl bg-top bg-cover duration-500 md:shadow-xl"
+          className="w-auto h-full lg:mx-10 md:rounded-2xl  bg-top bg-cover duration-500 md:shadow-xl "
         ></div>
 
         {/* flecha izquierda */}
-        <div className="hidden group-hover:block absolute z-40 top-[50%] -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white/20 cursor-pointer">
-          <SlArrowLeft onClick={prevSlide} className="w-5 h-5 text-white/60" />
+        <div
+          onClick={prevSlide}
+          className="hidden group-hover:block absolute z-40 top-[50%] -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white/20 cursor-pointer"
+        >
+          <SlArrowLeft className="w-5 h-5 text-white/60" />
         </div>
 
         {/* flecha derecha */}
-        <div className="hidden group-hover:block absolute z-40 top-[50%] -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-black/20 cursor-pointer">
-          <SlArrowRight onClick={nextSlide} className="w-5 h-5 text-white/60" />
+        <div
+          onClick={nextSlide}
+          className="hidden group-hover:block absolute z-40 top-[50%] -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-black/20 cursor-pointer"
+        >
+          <SlArrowRight className="w-5 h-5 text-white/60" />
         </div>
         <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%] pt-5 bg-slate-950/60 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
           <div className="mt-36 ml-16 max-md:ml-5 w-full">
-            <p className="font-bold text-left text-white w-3/4 text-5xl font-overPass max-md:text-4xl">
+            <p className="font-bold text-left text-white w-3/4 text-5xl font-overpass max-md:text-4xl">
               {slideImages[currentIndex].content.title}
             </p>
-            <p className="mt-10 font-bold text-left text-white w-3/4 text-lg font-overPass max-md:text-lg">
+            <p className="mt-10 font-bold text-left text-white w-3/4 text-lg font-overpass max-md:text-lg">
               {slideImages[currentIndex].content.subTitle}
             </p>
             {currentIndex === 0 && (
