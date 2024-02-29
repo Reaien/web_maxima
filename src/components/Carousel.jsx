@@ -102,16 +102,16 @@ export const Carousel = () => {
         >
           <SlArrowRight className="w-5 h-5 text-white/60" />
         </div>
-        <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%] pt-5 bg-slate-950/60 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
-          <div className="mt-36 ml-16 max-md:ml-5 w-full">
-            <p className="font-bold text-left text-white w-3/4 text-5xl font-overpass max-md:text-4xl">
+        <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%]  xl:pt-5 bg-slate-950/60 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
+          <div className="mt-16 xl:mt-40 ml-16 max-md:ml-5 w-auto ">
+            <p className="font-bold text-left text-white w-3/4  font-overpass text-4xl xl:text-5xl">
               {slideImages[currentIndex].content.title}
             </p>
-            <p className="mt-10 font-bold text-left text-white w-3/4 text-lg font-overpass max-md:text-lg">
+            <p className=" mt-5 md:mt-10 font-bold text-left text-white w-3/4 text-lg font-overpass max-md:text-lg">
               {slideImages[currentIndex].content.subTitle}
             </p>
             {currentIndex === 0 && (
-              <div className=" gap-2 mt-10">
+              <div className=" gap-2 mt-5 md:mt-10">
                 <a href="#">
                   <button className="py-5 mb-3 px-5 rounded bg-blue-700 hover:bg-blue-500 transition-all duration-400 hover:underline text-lg font-bold text-white">
                     {slideImages[currentIndex].content.buttonTitle}

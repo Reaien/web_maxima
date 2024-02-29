@@ -8,15 +8,45 @@ export const NavBar = () => {
     boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.1)",
   };
 
+  //Hook que controla la visibilidad del menu del navBar y sus títulos en modalidad desktop
   const [menuVisible, setMenuVisible] = useState(false);
-  const toggleMenu = () => {
+  const [menuTitle, setMenuTitle] = useState("");
+  const toggleMenu = (title) => {
     setMenuVisible(!menuVisible);
+    setMenuTitle(title);
   };
 
   const [menuMovilVisible, setMenuMovilVisible] = useState(false);
   const toggleMenuMovil = () => {
     setMenuMovilVisible(!menuMovilVisible);
   };
+
+  //controlar componente por resolucion para navbar movil
+  const windowWidth = window.innerWidth;
+
+  let contentMovil;
+
+  if (windowWidth <= 768) {
+    contentMovil = (
+      <ToggleMenuXL
+        menuVisible={menuVisible}
+        setMenuVisible={setMenuVisible}
+        menuTitle={menuTitle}
+      />
+    );
+  }
+
+  let contentDesktop;
+
+  if (windowWidth > 768) {
+    contentDesktop = (
+      <ToggleMenuXL
+        menuVisible={menuVisible}
+        setMenuVisible={setMenuVisible}
+        menuTitle={menuTitle}
+      />
+    );
+  }
 
   return (
     <>
@@ -27,9 +57,8 @@ export const NavBar = () => {
           </div>
           <div className="max-lg:hidden flex items-center space-x-4 px-3">
             <button
-              onClick={toggleMenu}
+              onClick={() => toggleMenu("Soluciones")}
               className="ml-6 hover:text-emerald-600  focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
-              href="#"
             >
               Soluciones
               <svg
@@ -48,7 +77,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
-              onClick={toggleMenu}
+              onClick={() => toggleMenu("Casos de éxito")}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -69,7 +98,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
-              onClick={toggleMenu}
+              onClick={() => toggleMenu("¿Por qué Máxima?")}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -90,7 +119,7 @@ export const NavBar = () => {
               </svg>
             </button>
             <button
-              onClick={toggleMenu}
+              onClick={() => toggleMenu("Blog")}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -148,22 +177,29 @@ export const NavBar = () => {
         className={`lg:hidden ${menuMovilVisible ? "" : "hidden"} animate-flip-down animate-duration-[400ms] absolute z-10 w-full`}
       >
         <div
+          onClick={() => toggleMenu("Soluciones")}
           style={estilo}
-          className="bg-white hover:bg-emerald-500 hover:text-white transition-colors duration-700"
+          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
         >
-          <button href="">
-            <p className="py-4 p-5">Soluciones</p>
-          </button>
+          <p className="py-4 p-5">Soluciones</p>
         </div>
-        <div className="bg-white hover:bg-emerald-500 hover:text-white transition-colors duration-700">
-          <button href="">
-            <p className="py-4 p-5">Casos de éxito</p>
-          </button>
+        <div
+          onClick={() => toggleMenu("Casos de éxito")}
+          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
+        >
+          <p className="py-4 p-5">Casos de éxito</p>
         </div>
-        <div className="bg-white hover:bg-emerald-500 hover:text-white transition-colors duration-700">
-          <button href="">
-            <p className="py-4 p-5">¿Por qué Máxima?</p>
-          </button>
+        <div
+          onClick={() => toggleMenu("¿Por qué Máxima?")}
+          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
+        >
+          <p className="py-4 p-5">¿Por qué Máxima?</p>
+        </div>
+        <div
+          onClick={() => toggleMenu("Blog")}
+          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
+        >
+          <p className="py-4 p-5">Blog</p>
         </div>
         <div className="bg-white pt-4">
           <a href="">
@@ -172,12 +208,9 @@ export const NavBar = () => {
             </button>
           </a>
         </div>
+        {contentMovil}
       </section>
-      <ToggleMenuXL
-        menuVisible={menuVisible}
-        setMenuVisible={setMenuVisible}
-        titulo="Soluciones"
-      />
+      {contentDesktop}
     </>
   );
 };
