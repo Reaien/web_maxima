@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import carousel1 from "../assets/carousel1.jpg";
-import carousel2 from "../assets/carousel2.jpg";
-import carousel3 from "../assets/carousel3.jpeg";
+import carousel1 from "../assets/carousel1.webp";
+import carousel2 from "../assets/carousel2.webp";
+import carousel3 from "../assets/carousel3.webp";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
