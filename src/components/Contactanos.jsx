@@ -27,8 +27,8 @@ export const Contactanos = () => {
   };
   return (
     <>
-      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent lg:grid-cols-2  items-center grid grid-rows-1 shadow-md  md:h-[650px]  mt-40 ">
-        <div className="md:ml-40 md:-mt-40 ">
+      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent  items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  md:h-[650px]  ">
+        <div className="md:ml-40  ">
           <p className="font-overpass ml-1 mb-5 text-xl">
             Sé parte de nuestra{" "}
             <span className="text-emerald-500">experiencia</span> de enseñanza e{" "}
@@ -64,6 +64,7 @@ export const Contactanos = () => {
                   type="text"
                   name="user_name"
                   placeholder="Ingresa tu nombre"
+                  required
                 />
               </div>
               <div className="mb-5">
@@ -75,6 +76,7 @@ export const Contactanos = () => {
                   type="email"
                   name="user_email"
                   placeholder="Ingresa tu correo electronico"
+                  required
                 />
               </div>
               <div>
@@ -85,12 +87,13 @@ export const Contactanos = () => {
                   className="h-44 bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded focus:ring-emerald-500 focus:border-emerald-500 duration-500 block w-full p-2.5 outline-none"
                   name="message"
                   placeholder="Ingresa tu mensaje"
+                  required
                 />
               </div>
               <button
                 type="submit"
                 value="Envíar contacto"
-                className="mt-4 rounded bg-emerald-500 hover:bg-emerald-400 duration-500 py-2 px-3 font-bold text-white font-custom cursor-pointer"
+                className="mt-4 rounded bg-gradient-to-b from-emerald-500  to-emerald-600    py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline"
               >
                 Envíar contacto
               </button>

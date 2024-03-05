@@ -142,7 +142,7 @@ export const NavBar = () => {
           </div>
           <div className="pt-2 ml-10 max-lg:hidden">
             <a href="#">
-              <button className="py-1 ml-2 px-3 mb-3 rounded bg-blue-600 hover:bg-blue-500 transition-all duration-400 hover:underline font-bold text-white font-custom">
+              <button className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline font-bold text-white font-custom">
                 Comunícate con nosotros
               </button>
             </a>
@@ -203,7 +203,7 @@ export const NavBar = () => {
         </div>
         <div className="bg-white pt-4">
           <a href="">
-            <button className="py-1 ml-2 px-3 mb-3 rounded bg-blue-600 hover:bg-blue-300 transition-all duration-400 hover:underline  font-bold text-white ">
+            <button className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline  font-bold text-white ">
               Comunícate con nosotros
             </button>
           </a>
