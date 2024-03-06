@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 
 export const Contactanos = () => {
-  const form = useRef();
+  // useState para el captcha y pasar el estado a true si se realizó el captcha
+  //configurar y seguir doc de emailJS para configurar la key en el dashboard de emailJS
+  const [capValue, setCapValue] = useState(null);
 
+  //formulario de emailJS
+  const form = useRef();
+  //funcion para el formulario de emailJS con las keys
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,17 +33,19 @@ export const Contactanos = () => {
   };
   return (
     <>
-      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent  items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  md:h-[650px]  ">
-        <div className="md:ml-40  ">
-          <p className="font-overpass ml-1 mb-5 text-xl">
+      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent  items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  md:h-[700px] ">
+        <div className="md:ml-40 mx-5 mt-10 ">
+          <p className="text-base text-center font-overpass ml-1 mb-5 md:text-xl">
             Sé parte de nuestra{" "}
             <span className="text-emerald-500">experiencia</span> de enseñanza e{" "}
             <span className="text-emerald-500">innovación</span>
           </p>
-          <p className="text-4xl md:text-7xl font-overpass text-left">
+          <p className="max-md:text-center text-6xl md:text-7xl font-overpass text-left">
             Contáctanos
           </p>
-          <p className="mt-20 text-2xl ml-5">Nuestras Redes</p>
+          <p className=" max-md:text-center mt-20 text-2xl ml-5 mb-10">
+            Nuestras Redes
+          </p>
           <div className="flex md:justify-start gap-5 justify-between text-center text-4xl px-5 my-5 ">
             <FaFacebook className="hover:text-emerald-500 duration-500" />
             <FaLinkedin className="hover:text-emerald-500 duration-500" />
@@ -52,7 +60,7 @@ export const Contactanos = () => {
               ref={form}
               onSubmit={sendEmail}
             >
-              <p className="py-10 font-overpass text-slate-400 italic ">
+              <p className="py-10 font-overpass text-slate-400 italic text-center">
                 "Trabajemos juntos para convertir grandes visiones en realidad."
               </p>
               <div className="mb-5">
@@ -90,13 +98,24 @@ export const Contactanos = () => {
                   required
                 />
               </div>
-              <button
-                type="submit"
-                value="Envíar contacto"
-                className="mt-4 rounded bg-gradient-to-b from-emerald-500  to-emerald-600    py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline"
-              >
-                Envíar contacto
-              </button>
+              <div className="max-md:flex justify-center items-center">
+                <ReCAPTCHA
+                  sitekey="6LcjA40pAAAAADpMI9QCajwruAQ41l5DlBcOXRvm"
+                  onChange={(val) => setCapValue(val)}
+                  className="mt-5"
+                />
+              </div>
+              <div className="max-md:flex justify-center items-center">
+                <button
+                  type="submit"
+                  value="Envíar contacto"
+                  className="mt-4 rounded bg-gradient-to-b from-emerald-500  to-emerald-600  py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline "
+                  //boton disabled hasta que se pase el captcha//
+                  disabled={!capValue}
+                >
+                  Envíar contacto
+                </button>
+              </div>
             </form>
           </div>
         </div>

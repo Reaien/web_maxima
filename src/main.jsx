@@ -7,6 +7,7 @@ import { ToggleMenuXL } from "./components/ToggleMenuXL.jsx";
 import { Contactanos } from "./components/Contactanos.jsx";
 import { KPI } from "./components/KPI.jsx";
 import { EmpresasContainer } from "./components/EmpresasContainer.jsx";
+import { TestimonioCliente } from "./components/TestimonioCliente.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Carousel />
     <KPI />
     <EmpresasContainer />
+    <TestimonioCliente />
     <Contactanos />
   </React.StrictMode>
 );
