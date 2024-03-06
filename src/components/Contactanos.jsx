@@ -113,7 +113,7 @@ export const Contactanos = () => {
                   //boton disabled hasta que se pase el captcha//
                   disabled={!capValue}
                 >
-                  Envíar contacto
+                  Enviar contacto
                 </button>
               </div>
             </form>

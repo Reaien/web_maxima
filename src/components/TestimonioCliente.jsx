@@ -14,13 +14,14 @@ export const TestimonioCliente = () => {
         <div className="mt-10 h-auto">
           {" "}
           <p className="uppercase text-left font-bold font-overpass md:w-3/4">
-            Mejora en las <span className="text-emerald-500">habilidades</span>y{" "}
-            <span className="text-emerald-500">seguridad</span> de tus empleados
+            Mejora en las <span className="text-emerald-500">habilidades </span>
+            y <span className="text-emerald-500">seguridad</span> de tus
+            empleados
           </p>
-          <p className="font-bold text-6xl font-overpass mt-12 md:w-2/4 md:text-left">
+          <p className="font-bold text-6xl font-overpass mt-12 md:w-4/4 md:text-left">
             Testimonios de nuestros clientes
           </p>
-          <p className="md:w-2/4  font-overpass md:text-left mt-5">
+          <p className="md:w-3/4  font-overpass md:text-left mt-5">
             Descubre como el programa de Máxima Formación ha ayudado a
             solucionar los requerimientos de este y más clientes de otras
             empresas.
