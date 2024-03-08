@@ -34,8 +34,8 @@ export const Contactanos = () => {
   return (
     <>
       <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent  items-center grid grid-rows-1 lg:grid-cols-2  shadow-md  md:h-[700px] ">
-        <div className="md:ml-40 mx-5 mt-10 ">
-          <p className="text-base text-center font-overpass ml-1 mb-5 md:text-xl">
+        <div className="md:ml-40 mx-5 max-md:mt-10 md:-mt-36">
+          <p className="text-base max-md:text-center font-overpass ml-1 mb-5 md:text-xl">
             Sé parte de nuestra{" "}
             <span className="text-emerald-500">experiencia</span> de enseñanza e{" "}
             <span className="text-emerald-500">innovación</span>

@@ -4,7 +4,7 @@ import { BsCheck2All } from "react-icons/bs";
 export const TestimonioCliente = () => {
   return (
     <>
-      <section className="grid grid-rows-1 md:grid-cols-2 md:h-[700px] text-center mx-5 mb-10">
+      <section className="grid grid-rows-1 md:grid-cols-2 md:h-[700px] text-center mx-5 mb-10 items-center">
         <div className="flex items-start justify-center mt-10 h-auto">
           <iframe
             className="w-5/6 aspect-video"
@@ -14,12 +14,13 @@ export const TestimonioCliente = () => {
         <div className="mt-10 h-auto">
           {" "}
           <p className="uppercase text-left font-bold font-overpass md:w-3/4">
-            Mejora en las <span className="text-emerald-500">habilidades </span>
-            y <span className="text-emerald-500">seguridad</span> de tus
-            empleados
+            Conoce nuestras historias de{" "}
+            <span className="text-emerald-500">transformación </span>e{" "}
+            <span className="text-emerald-500">impulso</span> de las empresas
           </p>
           <p className="font-bold text-6xl font-overpass mt-12 md:w-4/4 md:text-left">
-            Testimonios de nuestros clientes
+            Testimonios de nuestros{" "}
+            <span className="text-emerald-500">clientes</span>
           </p>
           <p className="md:w-3/4  font-overpass md:text-left mt-5">
             Descubre como el programa de Máxima Formación ha ayudado a

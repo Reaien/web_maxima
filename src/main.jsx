@@ -8,6 +8,8 @@ import { Contactanos } from "./components/Contactanos.jsx";
 import { KPI } from "./components/KPI.jsx";
 import { EmpresasContainer } from "./components/EmpresasContainer.jsx";
 import { TestimonioCliente } from "./components/TestimonioCliente.jsx";
+import { TestimonioEmpleado } from "./components/TestimonioEmpleado.jsx";
+import { SimuladorContent } from "./components/SimuladorContent.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,7 +18,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Carousel />
     <KPI />
     <EmpresasContainer />
+    <SimuladorContent />
     <TestimonioCliente />
+    <TestimonioEmpleado />
     <Contactanos />
   </React.StrictMode>
 );
