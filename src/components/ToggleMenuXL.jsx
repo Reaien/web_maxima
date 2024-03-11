@@ -2,7 +2,6 @@ import React from "react";
 import { SolucionesContent } from "./SolucionesContent";
 import { CasosDeExitoContent } from "./CasosDeExitoContent";
 import { PorQueMaximaContent } from "./PorQueMaximaContent";
-import { BlogContent } from "./BlogContent";
 
 export const ToggleMenuXL = ({ menuVisible, setMenuVisible, menuTitle }) => {
   let contentComponente;
@@ -12,9 +11,8 @@ export const ToggleMenuXL = ({ menuVisible, setMenuVisible, menuTitle }) => {
     contentComponente = <CasosDeExitoContent />;
   } else if (menuTitle === "¿Por qué Máxima?") {
     contentComponente = <PorQueMaximaContent />;
-  } else {
-    contentComponente = <BlogContent />;
   }
+
   return (
     <>
       <section>

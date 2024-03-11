@@ -1,55 +1,85 @@
 import React from "react";
-import { useState } from "react";
+import blog1 from "../assets/blog1.webp";
+import blog2 from "../assets/blog2.webp";
+import blog3 from "../assets/blog3.webp";
+
 export const BlogContent = () => {
-  const [hoveredImage, setHoveredImage] = useState(null);
-
-  const handleMouseEnter = (image) => {
-    setHoveredImage(image);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredImage(null);
-  };
-
-  const isWideScreen = window.innerWidth > 768;
   return (
     <>
-      {/* container armado de toggleMenuDesktop */}
-      <div className="flex mb-3">
-        <div className="flex items-center flex-wrap md:w-3/4 animate-fade animate-duration-[2000ms]">
-          <a
-            onMouseEnter={() => handleMouseEnter("imagenBlog")}
-            onMouseLeave={handleMouseLeave}
-            className="mb-3 md:mt-14 md:pb-32 hover:text-emerald-600 hover:underline"
-            href="#"
-          >
-            <div>
-              <p className="mt-11 font-bold font-overpass">
-                Inspiración y Conocimiento
-              </p>
-            </div>
-            <div className="text-left mt-5">
-              <p className="text-sm">
-                Explora nuestro Blog y encuentra inspiración y conocimiento
-                sobre prevención de riesgos. Descubre cómo es que podemos
-                entregarte una solución moderna e impulsar a mantener tu entorno
-                laboral seguro.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div className="flex justify-center items-center w-full ">
-          {/* Renderizado condicional de la imagen segun el state onMouseEnter */}
-          {hoveredImage && isWideScreen && (
-            <img
-              className="md:w-[430px] animate-fade-left rounded-md shadow-lg mt-14"
-              src={`../src/assets/${hoveredImage}.webp`}
-              alt="imagen"
-            />
-          )}
-        </div>
+      <div className="grid grid-rows-1 items-center justify-center text-center">
+        <p className="text-6xl  pl-6 font-bold font-overpass">
+          <span className="text-emerald-500 ">Blog</span> <br />
+          Últimas novedades
+        </p>
       </div>
-      {/* fin elemento */}
+      <section className="grid grid-rows-1 lg:grid-cols-3 my-20 mx-auto justify-center">
+        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+          <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
+            Compromiso en la enseñanza
+          </p>
+          <p className="mx-10 text-left text-sm mt-3">
+            En Máxima Formación, nos apasiona ayudar a las organizaciones a
+            desarrollar el potencial de su equipo humano a través de
+            capacitación y formación a medida.
+          </p>
+          {/* Contenedor de la imagen con gradiente */}
+          <div className="w-4/5 mx-auto mt-5 rounded-md overflow-hidden relative">
+            {/* Gradiente */}
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-800/90 via-emerald-400/20 to-transparent" />
+            {/* Imagen */}
+            <img
+              className="w-full h-full object-cover"
+              src={blog1}
+              alt="imagen_blog"
+            />
+          </div>
+          <p className="text-xs text-left mx-10 mt-1">07/09/2023</p>
+        </div>
+        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+          <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
+            Curso de Salud Ocupacional
+          </p>
+          <p className="mx-10 text-left text-sm mt-3">
+            En Máxima Formación, nos apasiona ayudar a las organizaciones a
+            desarrollar el potencial de su equipo humano a través de
+            capacitación y formación a medida.
+          </p>
+          {/* Contenedor de la imagen con gradiente */}
+          <div className="w-4/5 mx-auto mt-5 rounded-md overflow-hidden relative">
+            {/* Gradiente */}
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-800/90 via-emerald-400/20 to-transparent" />
+            {/* Imagen */}
+            <img
+              className="w-full h-full object-cover"
+              src={blog2}
+              alt="imagen_blog"
+            />
+          </div>
+          <p className="text-xs text-left mx-10 mt-1">02/07/2023</p>
+        </div>
+        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+          <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
+            Curso de mallas eléctricas
+          </p>
+          <p className="mx-10 text-left text-sm mt-3">
+            En Máxima Formación, nos apasiona ayudar a las organizaciones a
+            desarrollar el potencial de su equipo humano a través de
+            capacitación y formación a medida.
+          </p>
+          {/* Contenedor de la imagen con gradiente */}
+          <div className="w-4/5 mx-auto mt-5 rounded-md overflow-hidden relative">
+            {/* Gradiente */}
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-800/90 via-emerald-400/20 to-transparent" />
+            {/* Imagen */}
+            <img
+              className="w-full h-full object-cover"
+              src={blog3}
+              alt="imagen_blog"
+            />
+          </div>
+          <p className="text-xs text-left mx-10 mt-1">11/06/2023</p>
+        </div>
+      </section>
     </>
   );
 };

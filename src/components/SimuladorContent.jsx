@@ -1,13 +1,8 @@
 import React from "react";
-import video1 from "../assets/video/video_bloqueo_loto.mp4";
-import video2 from "../assets/video/video_espacio_reducido.mp4";
 import video3 from "../assets/video/video_extintor.mp4";
-import rombo_loto_1 from "../assets/rombo_loto_1.webp";
-import rombo_loto_2 from "../assets/rombo_loto_2.webp";
-import rombo_loto_3 from "../assets/rombo_loto_3.webp";
-import rombo_confinado_1 from "../assets/rombo_confinado_1.webp";
-import rombo_confinado_2 from "../assets/rombo_confinado_2.webp";
-import rombo_confinado_3 from "../assets/rombo_confinado_3.webp";
+import rombo_extintor_1 from "../assets/rombo_extintor_1.webp";
+import rombo_extintor_2 from "../assets/rombo_extintor_2.webp";
+import rombo_extintor_3 from "../assets/rombo_extintor_3.webp";
 
 export const SimuladorContent = () => {
   return (
@@ -30,24 +25,34 @@ export const SimuladorContent = () => {
             <span className="text-emerald-500">Experiencia</span> Uso de
             extintores
           </p>
-          <div className="grid gird-row grid-cols-2 text-center mt-10 justify-center">
+          <div className="grid gird-row grid-cols-3 text-center mt-10 justify-center">
             <div className="flex justify-center flex-wrap px-5">
-              <p className="font-semibold text-base font-overpass">
-                Cinta transportadora y riesgo eléctrico.
+              <p className="font-semibold text-sm font-overpass">
+                Extintores VR para entrenamiento real.
               </p>
               <img
                 className="w-52 drop-shadow-md mt-3"
-                src={rombo_loto_1}
+                src={rombo_extintor_1}
                 alt="rombo1"
               />
             </div>
             <div className="flex justify-center flex-wrap px-5">
-              <p className="font-semibold text-base font-overpass">
-                Realizar el protocolo de bloqueo y etiquetado.
+              <p className="font-semibold text-sm font-overpass">
+                Práctica de extinción de incendios en VR.
               </p>
               <img
                 className="w-52 drop-shadow-md mt-3"
-                src={rombo_loto_2}
+                src={rombo_extintor_2}
+                alt="rombo2"
+              />
+            </div>
+            <div className="flex justify-center flex-wrap px-5">
+              <p className="font-semibold text-sm font-overpass">
+                Domina extintores en VR: tu entrenamiento contra incendios.
+              </p>
+              <img
+                className="w-52 drop-shadow-md mt-3"
+                src={rombo_extintor_3}
                 alt="rombo2"
               />
             </div>
