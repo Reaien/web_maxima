@@ -30,10 +30,10 @@ export const EmpresasContainer = () => {
   return (
     <>
       <section className="h-[400px] max-w-auto w-auto bg-white mt-20 mb-20 grid grid-rows-1 md:grid-cols-2 items-center">
-        <div className="md:mx-auto font-overpass text-4xl md:text-5xl text-start md:w-1/2 px-5 font-bold md:mr-20">
-          Empresas líderes que{" "}
-          <span className="text-emerald-500">maximizan</span> su potencial con
-          nosotros.
+        <div className="md:mx-auto font-overpass text-4xl md:text-5xl md:text-start text-center md:w-1/2 px-5 font-bold md:mr-20">
+          Empresas líderes que
+          <span className="text-emerald-500"> maximizan </span>
+          su potencial con nosotros.
         </div>
         <div className="mx-auto w-auto h-auto mt-4 flex md:ml-36">
           <div

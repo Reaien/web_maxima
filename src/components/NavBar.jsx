@@ -2,8 +2,19 @@ import React from "react";
 import { useState } from "react";
 import maximaLogoFull from "../assets/maximaLogoFull.svg";
 import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
+  //fncion para scroll a componente BlogContent
+  const scrollToBlogContent = () => {
+    const blogContent = document.getElementById("blog-content");
+    blogContent.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+  };
+
   const estilo = {
     boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.1)",
   };
@@ -120,6 +131,7 @@ export const NavBar = () => {
             </button>
 
             <button
+              onClick={() => scrollToBlogContent()}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
@@ -181,7 +193,11 @@ export const NavBar = () => {
         >
           <p className="py-4 p-5">¿Por qué Máxima?</p>
         </div>
-        <div className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700">
+
+        <div
+          onClick={() => scrollToBlogContent()}
+          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
+        >
           <p className="py-4 p-5">Blog</p>
         </div>
         <div className="bg-white pt-4">

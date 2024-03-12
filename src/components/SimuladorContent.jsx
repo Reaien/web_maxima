@@ -19,14 +19,14 @@ export const SimuladorContent = () => {
           </p>
         </p>
       </div>
-      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[400px]">
+      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[400px] mb-20">
         <div className="mt-10">
           <p className="font-bold text-5xl font-overpass text-center">
             <span className="text-emerald-500">Experiencia</span> Uso de
             extintores
           </p>
-          <div className="grid gird-row grid-cols-3 text-center mt-10 justify-center">
-            <div className="flex justify-center flex-wrap px-5">
+          <div className="grid gird-row md:grid-cols-3 text-center mt-10 justify-center">
+            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
               <p className="font-semibold text-sm font-overpass">
                 Extintores VR para entrenamiento real.
               </p>
@@ -36,7 +36,7 @@ export const SimuladorContent = () => {
                 alt="rombo1"
               />
             </div>
-            <div className="flex justify-center flex-wrap px-5">
+            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
               <p className="font-semibold text-sm font-overpass">
                 Práctica de extinción de incendios en VR.
               </p>
@@ -46,7 +46,7 @@ export const SimuladorContent = () => {
                 alt="rombo2"
               />
             </div>
-            <div className="flex justify-center flex-wrap px-5">
+            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
               <p className="font-semibold text-sm font-overpass">
                 Domina extintores en VR: tu entrenamiento contra incendios.
               </p>

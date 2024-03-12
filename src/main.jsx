@@ -11,6 +11,7 @@ import { TestimonioCliente } from "./components/TestimonioCliente.jsx";
 import { TestimonioEmpleado } from "./components/TestimonioEmpleado.jsx";
 import { SimuladorContent } from "./components/SimuladorContent.jsx";
 import { BlogContent } from "./components/BlogContent.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,7 +23,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <SimuladorContent />
     <TestimonioCliente />
     <TestimonioEmpleado />
-    <BlogContent />
+    <div id="blog-content">
+      <BlogContent />
+    </div>
+
     <Contactanos />
   </React.StrictMode>
 );

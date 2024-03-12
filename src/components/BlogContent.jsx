@@ -13,7 +13,7 @@ export const BlogContent = () => {
         </p>
       </div>
       <section className="grid grid-rows-1 lg:grid-cols-3 my-20 mx-auto justify-center">
-        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+        <div className="md:w-[415px] w-auto md:h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto">
           <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
             Compromiso en la enseñanza
           </p>
@@ -35,7 +35,7 @@ export const BlogContent = () => {
           </div>
           <p className="text-xs text-left mx-10 mt-1">07/09/2023</p>
         </div>
-        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+        <div className="md:w-[415px] w-auto h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
           <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
             Curso de Salud Ocupacional
           </p>
@@ -57,7 +57,7 @@ export const BlogContent = () => {
           </div>
           <p className="text-xs text-left mx-10 mt-1">02/07/2023</p>
         </div>
-        <div className="w-[415px] h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
+        <div className="md:w-[415px] w-auto h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto ">
           <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
             Curso de mallas eléctricas
           </p>
