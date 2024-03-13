@@ -108,7 +108,7 @@ export const Carousel = () => {
         </div>
         <div className="absolute inset-0 w-98 h-[768px] mt-28  md:right-[55%]  xl:pt-5 bg-slate-950/60 lg:mx-10 md:shadow-xl md:rounded-l-2xl bg-center bg-cover">
           <div className="mt-16 xl:mt-32 ml-16 max-md:ml-5 w-auto ">
-            <p className="font-bold text-left text-white w-3/4  font-overpass text-4xl xl:text-5xl">
+            <p className="font-bold text-left text-white w-3/4  font-overpass text-4xl xl::text-5xl">
               {slideImages[currentIndex].content.title}
             </p>
             <p className=" mt-5 md:mt-10 font-bold text-left text-white w-3/4 text-lg font-overpass max-md:text-lg">

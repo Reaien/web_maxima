@@ -22,8 +22,8 @@ export const SimuladorContent = () => {
       <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[400px] mb-20">
         <div className="mt-10">
           <p className="font-bold text-5xl font-overpass text-center">
-            <span className="text-emerald-500">Experiencia</span> Uso de
-            extintores
+            Experiencia
+            <span className="text-emerald-500"> uso de extintores</span>
           </p>
           <div className="grid gird-row md:grid-cols-3 text-center mt-10 justify-center">
             <div className="flex justify-center flex-wrap px-5 max-md:mb-5">

@@ -20,7 +20,7 @@ export const CasosDeExitoContent = () => {
     <>
       {/* container armado de toggleMenuDesktop */}
       <div className="flex">
-        <div className="flex items-center flex-wrap md:w-3/4 animate-fade animate-duration-[2000ms]">
+        <div className="flex items-center flex-wrap md:w-3/4 animate-fade animate-duration-[2000ms] md:mt-10">
           <a
             onMouseEnter={() =>
               handleMouseEnter("imagenHistoriaDeTransformacion")
@@ -46,7 +46,7 @@ export const CasosDeExitoContent = () => {
               handleMouseEnter("imagenInspiracionEmpresarial")
             }
             onMouseLeave={handleMouseLeave}
-            className="mb-3 hover:text-emerald-600 hover:underline"
+            className="mb-3 md:mt-14 md:pb-10 hover:text-emerald-600 hover:underline"
             href="#"
           >
             <div>
@@ -62,29 +62,8 @@ export const CasosDeExitoContent = () => {
               </p>
             </div>
           </a>
-          <a
-            onMouseEnter={() =>
-              handleMouseEnter("imagenResultadosSobresalientes")
-            }
-            onMouseLeave={handleMouseLeave}
-            className="mb-3 hover:text-emerald-600 hover:underline"
-            href="#"
-          >
-            <div>
-              <p className="mt-10 font-bold font-overpass ">
-                Resultados Sobresalientes
-              </p>
-            </div>
-            <div className="text-left">
-              <p className="text-sm">
-                "Sumérgete en la experiencia de empresas que han logrado
-                resultados sobresalientes con nuestra ayuda. Explora nuestros
-                casos de éxito y descubre el potencial de tu negocio."
-              </p>
-            </div>
-          </a>
         </div>
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-96">
           {/* Renderizado condicional de la imagen segun el state onMouseEnter */}
           {hoveredImage && isWideScreen && (
             <img
