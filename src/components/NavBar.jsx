@@ -63,9 +63,9 @@ export const NavBar = () => {
     <>
       <header className="bg-white shadow-md h-24 ">
         <div className=" flex items-center justify-between max-w-screen-2xl mx-auto ">
-          <div className="lg:pl-16 xl:pl-40 -mt-3">
+          <Link to="/" className="lg:pl-16 xl:pl-40 -mt-3">
             <img className="w-48" src={maximaLogoFull} alt="logo" />
-          </div>
+          </Link>
           <div className="max-lg:hidden flex items-center space-x-4 px-3">
             <button
               onClick={() => toggleMenu("Soluciones")}
@@ -87,27 +87,12 @@ export const NavBar = () => {
                 />
               </svg>
             </button>
-            <button
-              onClick={() => toggleMenu("¿Por qué Máxima?")}
+            <Link
+              to="/maxima"
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
-              href="#"
             >
               ¿Por qué Máxima?
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-3 h-3 ml-1"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </button>
+            </Link>
             <button
               onClick={() => toggleMenu("Casos de éxito")}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
