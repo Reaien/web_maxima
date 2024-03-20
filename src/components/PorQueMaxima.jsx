@@ -3,6 +3,7 @@ import { NavBar } from "./NavBar.jsx";
 import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
 import NuestraMision from "./NuestraMision.jsx";
 import { ManagerProposal } from "./ManagerProposal.jsx";
+import { Footer } from "./Footer.jsx";
 
 const PorQueMaxima = () => {
   return (
@@ -11,6 +12,7 @@ const PorQueMaxima = () => {
       <ToggleMenuXL />
       <NuestraMision />
       <ManagerProposal />
+      <Footer />
     </React.Fragment>
   );
 };

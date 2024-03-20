@@ -9,6 +9,7 @@ import { TestimonioCliente } from "./TestimonioCliente.jsx";
 import { TestimonioEmpleado } from "./TestimonioEmpleado.jsx";
 import { SimuladorContent } from "./SimuladorContent.jsx";
 import { BlogContent } from "./BlogContent.jsx";
+import { Footer } from "./Footer.jsx";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <BlogContent />
       </div>
       <Contactanos />
+      <Footer />
     </React.Fragment>
   );
 };

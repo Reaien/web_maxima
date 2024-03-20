@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCheck2All } from "react-icons/bs";
-
+import caso_empleado from "../assets/video/caso_empleado.mp4";
 export const TestimonioEmpleado = () => {
   return (
     <>
@@ -38,11 +38,10 @@ export const TestimonioEmpleado = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start justify-center mt-10 h-auto">
-          <iframe
-            className="w-5/6 aspect-video"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Fhi9dW-CKVPdp8sL"
-          ></iframe>
+        <div className="flex items-center">
+          <video className="w-[800px] h-[500px] p-5" controls>
+            <source src={caso_empleado} type="video/mp4" />
+          </video>
         </div>
       </section>
     </>
