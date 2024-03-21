@@ -1,8 +1,8 @@
 import React from "react";
-import video3 from "../assets/video/video_extintor.mp4";
-import rombo_extintor_1 from "../assets/rombo_extintor_1.webp";
-import rombo_extintor_2 from "../assets/rombo_extintor_2.webp";
-import rombo_extintor_3 from "../assets/rombo_extintor_3.webp";
+import video3 from "../../assets/video/video_extintor.mp4";
+import rombo_extintor_1 from "../../assets/rombo_extintor_1.webp";
+import rombo_extintor_2 from "../../assets/rombo_extintor_2.webp";
+import rombo_extintor_3 from "../../assets/rombo_extintor_3.webp";
 
 export const SimuladorContent = () => {
   return (

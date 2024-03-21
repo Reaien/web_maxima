@@ -1,14 +1,17 @@
 import React from "react";
-import { NavBar } from "./NavBar.jsx";
-import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
-import NuestraMision from "./NuestraMision.jsx";
-import { ManagerProposal } from "./ManagerProposal.jsx";
-import { Footer } from "./Footer.jsx";
+import { NavBar } from "./Layouts/NavBar.jsx";
+import { ToggleMenuXL } from "./Layouts/ToggleMenuXL.jsx";
+import NuestraMision from "./PorQueMaxima/NuestraMision.jsx";
+import { ManagerProposal } from "./PorQueMaxima/ManagerProposal.jsx";
+import { Footer } from "../components/Layouts/Footer.jsx";
+import { ImageBar } from "../components/Layouts/ImageBar.jsx";
+import imagen_mision from "../assets/capa_maxima.webp";
 
 const PorQueMaxima = () => {
   return (
     <React.Fragment>
       <NavBar />
+      <ImageBar title="¿Por qué Máxima?" imageURL={imagen_mision} />
       <ToggleMenuXL />
       <NuestraMision />
       <ManagerProposal />

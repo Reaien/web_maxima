@@ -1,7 +1,7 @@
 import React from "react";
-import { SolucionesContent } from "./SolucionesContent";
-import { CasosDeExitoContent } from "./CasosDeExitoContent";
-import { PorQueMaximaContent } from "./PorQueMaximaContent";
+import { SolucionesContent } from "./SolucionesContent.jsx";
+import { CasosDeExitoContent } from "./CasosDeExitoContent.jsx";
+import { PorQueMaximaContent } from "./PorQueMaximaContent.jsx";
 
 export const ToggleMenuXL = ({ menuVisible, setMenuVisible, menuTitle }) => {
   let contentComponente;

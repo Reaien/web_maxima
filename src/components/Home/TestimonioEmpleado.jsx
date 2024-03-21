@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCheck2All } from "react-icons/bs";
-import caso_empleado from "../assets/video/caso_empleado.mp4";
+import caso_empleado from "../../assets/video/caso_empleado.mp4";
 export const TestimonioEmpleado = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import logo_copec from "../assets/logo_copec.webp";
-import logo_ruilt from "../assets/logo_ruilt.jpg";
+import logo_copec from "../../assets/logo_copec.webp";
+import logo_ruilt from "../../assets/logo_ruilt.jpg";
 
 export const EmpresasContainer = () => {
   const slideImages = [

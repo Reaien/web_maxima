@@ -1,15 +1,15 @@
 import React from "react";
-import { NavBar } from "./NavBar.jsx";
-import { Carousel } from "./Carousel.jsx";
-import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
-import { Contactanos } from "./Contactanos.jsx";
-import { KPI } from "./KPI.jsx";
-import { EmpresasContainer } from "./EmpresasContainer.jsx";
-import { TestimonioCliente } from "./TestimonioCliente.jsx";
-import { TestimonioEmpleado } from "./TestimonioEmpleado.jsx";
-import { SimuladorContent } from "./SimuladorContent.jsx";
-import { BlogContent } from "./BlogContent.jsx";
-import { Footer } from "./Footer.jsx";
+import { NavBar } from "./Layouts/NavBar.jsx";
+import { Carousel } from "./Home/Carousel.jsx";
+import { ToggleMenuXL } from "./Layouts/ToggleMenuXL.jsx";
+import { Contactanos } from "./Home/Contactanos.jsx";
+import { KPI } from "./Home/KPI.jsx";
+import { EmpresasContainer } from "./Home/EmpresasContainer.jsx";
+import { TestimonioCliente } from "./Home/TestimonioCliente.jsx";
+import { TestimonioEmpleado } from "./Home/TestimonioEmpleado.jsx";
+import { SimuladorContent } from "./Home/SimuladorContent.jsx";
+import { BlogContent } from "./Home/BlogContent.jsx";
+import { Footer } from "./Layouts/Footer.jsx";
 
 const Home = () => {
   return (

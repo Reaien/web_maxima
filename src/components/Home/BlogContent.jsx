@@ -1,7 +1,7 @@
 import React from "react";
-import blog1 from "../assets/blog1.webp";
-import blog2 from "../assets/blog2.webp";
-import blog3 from "../assets/blog3.webp";
+import blog1 from "../../assets/blog1.webp";
+import blog2 from "../../assets/blog1.webp";
+import blog3 from "../../assets/blog1.webp";
 
 export const BlogContent = () => {
   return (

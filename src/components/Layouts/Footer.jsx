@@ -1,5 +1,5 @@
 import React from "react";
-import maximaLogoFull from "../assets/maximaLogoFull.svg";
+import maximaLogoFull from "../../assets/maximaLogoFull.svg";
 import { FiMapPin } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";

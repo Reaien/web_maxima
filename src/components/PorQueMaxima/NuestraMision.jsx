@@ -1,5 +1,5 @@
 import React from "react";
-import imagen_mision from "../assets/capa_maxima.webp";
+
 import { GiProtectionGlasses } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
 import { LuBookOpenCheck } from "react-icons/lu";
@@ -7,22 +7,6 @@ import { LuBookOpenCheck } from "react-icons/lu";
 const NuestraMision = () => {
   return (
     <>
-      <section className="grid grid-rows-1 grid-cols-1  bg-white shadow-md">
-        <div className="h-[400px] md:h-[500px] relative">
-          <div className="absolute inset-0 bg-slate-800/60"></div>
-          <div className="flex justify-center">
-            <p className="absolute text-3xl md:text-7xl text-white font-bold mt-40 font-overpass">
-              ¿Por qué <span className="text-emerald-500">Máxima </span>?
-            </p>
-          </div>
-          <img
-            className="object-cover w-full h-full"
-            src={imagen_mision}
-            alt="imagen_mision"
-          />
-        </div>
-      </section>
-
       <section className="grid grid-rows-1 md:grid-cols-3 text-center mb-20">
         <div className="mt-10  md:px-16 px-10">
           <div className="w-[190px] h-[180px] bg-amber-400 shadow-xl rounded-2xl flex items-center border border-slate-950/5 mx-auto animate-fade-up md:animate-once md:animate-duration-[2000ms]">
