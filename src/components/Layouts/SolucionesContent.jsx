@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const SolucionesContent = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -23,15 +24,17 @@ export const SolucionesContent = () => {
             className="mb-3 hover:text-emerald-600 hover:underline"
             href="#"
           >
-            <div>
-              <p className="mt-10 font-bold font-overpass">Suscripción</p>
-            </div>
-            <div className="text-left">
-              <p className="text-sm">
-                Explora nuestras suscripciones y descubre cómo pueden potenciar
-                tu crecimiento y éxito.
-              </p>
-            </div>
+            <Link to="/soluciones">
+              <div>
+                <p className="mt-10 font-bold font-overpass">Suscripción</p>
+              </div>
+              <div className="text-left">
+                <p className="text-sm">
+                  Explora nuestras suscripciones y descubre cómo pueden
+                  potenciar tu crecimiento y éxito.
+                </p>
+              </div>
+            </Link>
           </a>
           <a
             onMouseEnter={() => handleMouseEnter("imagenCurso")}

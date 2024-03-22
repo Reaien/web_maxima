@@ -94,25 +94,10 @@ export const NavBar = () => {
               ¿Por qué Máxima?
             </Link>
             <button
-              onClick={() => toggleMenu("Casos de éxito")}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
               Casos de éxito
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-3 h-3 ml-1"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
             </button>
 
             <button
@@ -166,17 +151,14 @@ export const NavBar = () => {
         >
           <p className="py-4 p-5">Soluciones</p>
         </div>
-        <div
-          onClick={() => toggleMenu("Casos de éxito")}
-          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
-        >
-          <p className="py-4 p-5">Casos de éxito</p>
+        <div className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700">
+          <Link to="/maxima" style={estilo}>
+            <p className="py-4 p-5">¿Por qué Máxima?</p>
+          </Link>
         </div>
-        <div
-          onClick={() => toggleMenu("¿Por qué Máxima?")}
-          className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700"
-        >
-          <p className="py-4 p-5">¿Por qué Máxima?</p>
+
+        <div className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700">
+          <p className="py-4 p-5">Casos de éxito</p>
         </div>
 
         <div
