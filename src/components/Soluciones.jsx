@@ -12,7 +12,20 @@ const Soluciones = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
-      <CardPricing />
+      <div className="grid grid-rows-1 md:grid-cols-2">
+        <CardPricing
+          colorListon="#059669"
+          tituloPlan="Máxima"
+          subTituloPlan="Plan para empresas enfocado en la seguridad y prevención de riesgos
+        experiencia y acceso a material de manera online."
+        />
+        <CardPricing
+          colorListon="#f4cc3c"
+          tituloPlan="Versátil"
+          subTituloPlan="Plan para empresas que apunta a quienes desean un producto específico de todo nuestro catálogo"
+        />
+      </div>
+
       <Footer />
     </React.Fragment>
   );
