@@ -5,7 +5,7 @@ export const TestimonioEmpleado = () => {
   return (
     <>
       <section className="grid grid-rows-1 md:grid-cols-2 md:h-[700px] text-center   bg-white items-center mb-20">
-        <div className="mt-10 h-auto">
+        <div className="mt-10 h-auto ml-5">
           {" "}
           <p className="uppercase text-center font-bold font-overpass ">
             Mejora en las <span className="text-emerald-500">habilidades </span>
@@ -39,7 +39,7 @@ export const TestimonioEmpleado = () => {
           </div>
         </div>
         <div className="flex items-center">
-          <video className="w-[800px] h-[500px] p-5" controls>
+          <video className="w-[800px] h-[500px] border mx-5" controls>
             <source src={caso_empleado} type="video/mp4" />
           </video>
         </div>

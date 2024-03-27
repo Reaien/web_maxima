@@ -3,14 +3,11 @@ import { useState } from "react";
 import maximaLogoFull from "../../assets/maximaLogoFull.svg";
 import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 export const NavBar = () => {
   //fncion para scroll a componente BlogContent
   const scrollToBlogContent = () => {
-    const history = useHistory();
     const blogContent = document.getElementById("blog-content");
-    history.push("/");
     blogContent.scrollIntoView({
       behavior: "smooth",
       block: "center",

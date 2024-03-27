@@ -25,7 +25,9 @@ const Home = () => {
       <div id="blog-content">
         <BlogContent />
       </div>
-      <Contactanos />
+      <div id="contactanos">
+        <Contactanos />
+      </div>
       <Footer />
     </React.Fragment>
   );

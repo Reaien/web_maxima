@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
+import Swal from "sweetalert2";
 
 export const Contactanos = () => {
   // useState para el captcha y pasar el estado a true si se realizó el captcha
@@ -17,17 +18,28 @@ export const Contactanos = () => {
   //funcion para el formulario de emailJS con las keys
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-      .sendForm("service_0zegwqp", "template_mo6vjzl", form.current, {
+      .sendForm("service_1oa2fv9", "template_mo6vjzl", form.current, {
         publicKey: "-yYviovuhGc-yfknj",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          Swal.fire({
+            title: "Gracias por contactarte con Máxima Formación!",
+            text: "Pronto te responderemos por tu email de contacto",
+            icon: "success",
+            timer: 8000,
+          });
+          form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          Swal.fire({
+            title: "Ups! Ha ocurrido un problema",
+            text: "Estamos trabajando en el error",
+            icon: "error",
+            timer: 8000,
+          });
+          console.log(error);
         }
       );
   };

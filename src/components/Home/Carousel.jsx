@@ -7,6 +7,14 @@ import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
 export const Carousel = () => {
+  const scrollToContactoContent = () => {
+    const contactoContent = document.getElementById("contactanos");
+    contactoContent.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+  };
   const slideImages = [
     {
       imgUrl: carousel3,
@@ -14,14 +22,19 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Potencia tu empresa con los métodos más{" "}
-            <span className="text-emerald-400">sostenibles</span>, interactivos
-            y <span className="text-emerald-400">avanzados</span> del mercado.
+            Desarrolla las <span className="text-emerald-500">destrezas </span>{" "}
+            de tus empleados para liderar en seguridad laboral utilizando la{" "}
+            <span className="text-emerald-500">era digital.</span>
           </>
         ),
-        subTitle:
-          "Desarrolla las destrezas de tus empleados para liderar en seguridad laboral utilizando la era digital.",
-        buttonTitle: "Comunícate con nosotros",
+        subTitle: (
+          <>
+            Potencia tu empresa con los métodos más sostenibles, interactivos y
+            avanzados del mercado.
+          </>
+        ),
+
+        buttonTitle: <>Comunícate con nosotros</>,
       },
     },
     {
@@ -29,16 +42,19 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Fortalece tu empresa, somos la{" "}
-            <span className="text-emerald-400">clave</span> para tener un
-            entorno laboral más seguro e impular tu{" "}
-            <span className="text-emerald-400">crecimiento profesional</span> y
-            emprendedor.
+            Sé parte de cómo los métodos más{" "}
+            <span className="text-emerald-500">avanzados y sostenibles </span>
+            en prevención de riesgos pueden impulsar el{" "}
+            <span className="text-emerald-500">éxito</span> de tu empresa.
           </>
         ),
-        subTitle:
-          "Se parte de cómo los métodos avanzados y sostenibles en prevención de riesgos pueden impulsar el éxito de tu empresa.",
-        buttonTitle: "Comunícate con nosotros",
+        subTitle: (
+          <>
+            Fortalece tu empresa, somos la clave para tener un entorno laboral
+            más seguro e impular tu crecimiento profesional y emprendedor.
+          </>
+        ),
+        buttonTitle: <>Comunícate con nosotros</>,
       },
     },
     {
@@ -48,13 +64,14 @@ export const Carousel = () => {
           <>
             Somos una <span className="text-emerald-400">OTEC</span> chilena
             acreditada por <span className="text-emerald-400">Sence</span> y
-            certificada según la norma n°2728 para garantizar una{" "}
+            certificada según la norma NCH°2728 para garantizar una{" "}
             <span className="text-emerald-400">calidad de excelencia.</span>
           </>
         ),
-        subTitle:
-          "Transformamos vidas a través del conocimiento y la experiencia.",
-        buttonTitle: "Comunícate con nosotros",
+        subTitle: (
+          <>Transformamos vidas a través del conocimiento y la experiencia.</>
+        ),
+        buttonTitle: <>Comunícate con nosotros</>,
       },
     },
   ];
@@ -116,7 +133,10 @@ export const Carousel = () => {
             </p>
             <div className=" gap-2 mt-5 md:mt-10">
               <a href="#">
-                <button className="py-5 mb-3 px-5 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline text-lg font-bold text-white">
+                <button
+                  onClick={() => scrollToContactoContent()}
+                  className="py-5 mb-3 px-5 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline text-lg font-bold text-white"
+                >
                   {slideImages[currentIndex].content.buttonTitle}
                 </button>
               </a>

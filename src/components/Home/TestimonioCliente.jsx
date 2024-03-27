@@ -7,7 +7,7 @@ export const TestimonioCliente = () => {
     <>
       <section className="grid grid-rows-1 md:grid-cols-2 md:h-[700px] text-center mx-5 mb-10 items-center">
         <div className="flex items-center">
-          <video className="w-full h-full p-5" controls>
+          <video className="w-full h-full border mx-5" controls>
             <source src={caso_cliente} type="video/mp4" />
           </video>
         </div>
