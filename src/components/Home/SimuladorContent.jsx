@@ -59,7 +59,7 @@ export const SimuladorContent = () => {
             </div>
           </div>
           <Link className="flex justify-end mt-1 font-overpass font-bold focus:cursor-pointer ">
-            <p className="hover:text-emerald-600 hover:underline">
+            <p className="text-emerald-500 hover:underline">
               Explora todos nuestros cursos
             </p>
           </Link>

@@ -11,15 +11,6 @@ export const Footer = () => {
         <img src={maximaLogoFull} alt="Logo Maxima" />
       </div>
       <div className="text-white text-left  gap-3">
-        <div className="flex mb-5">
-          <FiMapPin className="w-[30px] h-[30px] mt-1" />
-          <div className=" ml-3">
-            <p className="font-overpass font-bold">
-              Dirección ejecutiva: Concepción
-            </p>
-            <p className="font-overpass font-bold">Calle 10 N° 100</p>
-          </div>
-        </div>
         <div className="flex items-center mb-5">
           <FiPhone className="w-[30px] h-[30px] " />
           <div className="ml-3">
@@ -42,7 +33,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-white text-center md:text-left">
-        <p className="text-3xl font-bold">Páginas</p>
+        <p className="text-3xl font-bold font-overpass">Páginas</p>
         <ul className="md:text-left">
           <li>
             <a href="">Inicio</a>

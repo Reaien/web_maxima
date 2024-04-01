@@ -3,8 +3,22 @@ import { useState } from "react";
 import maximaLogoFull from "../../assets/maximaLogoFull.svg";
 import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
+  //fx para scroll a contacto
+  const navigate = useNavigate();
+  const scrollToContactoContent = () => {
+    navigate("/");
+    setTimeout(() => {
+      const contactoContent = document.getElementById("contactanos");
+      contactoContent.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }, 100);
+  };
   //fncion para scroll a componente BlogContent
   const scrollToBlogContent = () => {
     const blogContent = document.getElementById("blog-content");
@@ -109,11 +123,12 @@ export const NavBar = () => {
             </button>
           </div>
           <div className="pt-2 ml-10 max-lg:hidden">
-            <a href="#">
-              <button className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline font-bold text-white font-custom">
-                Comunícate con nosotros
-              </button>
-            </a>
+            <button
+              onClick={() => scrollToContactoContent()}
+              className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline font-bold text-white font-custom"
+            >
+              Comunícate con nosotros
+            </button>
           </div>
 
           {/*Botón movil*/}
@@ -168,11 +183,12 @@ export const NavBar = () => {
           <p className="py-4 p-5">Blog</p>
         </div>
         <div className="bg-white pt-4">
-          <a href="">
-            <button className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline  font-bold text-white ">
-              Comunícate con nosotros
-            </button>
-          </a>
+          <button
+            onClick={() => scrollToContactoContent()}
+            className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline  font-bold text-white "
+          >
+            Comunícate con nosotros
+          </button>
         </div>
         {contentMovil}
       </section>

@@ -132,14 +132,12 @@ export const Carousel = () => {
               {slideImages[currentIndex].content.subTitle}
             </p>
             <div className=" gap-2 mt-5 md:mt-10">
-              <a href="#">
-                <button
-                  onClick={() => scrollToContactoContent()}
-                  className="py-5 mb-3 px-5 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline text-lg font-bold text-white"
-                >
-                  {slideImages[currentIndex].content.buttonTitle}
-                </button>
-              </a>
+              <button
+                onClick={() => scrollToContactoContent()}
+                className="py-5 mb-3 px-5 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline text-lg font-bold text-white"
+              >
+                {slideImages[currentIndex].content.buttonTitle}
+              </button>
             </div>
           </div>
         </div>
