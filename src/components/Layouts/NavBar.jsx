@@ -21,12 +21,15 @@ export const NavBar = () => {
   };
   //fncion para scroll a componente BlogContent
   const scrollToBlogContent = () => {
-    const blogContent = document.getElementById("blog-content");
-    blogContent.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-      inline: "center",
-    });
+    navigate("/");
+    setTimeout(() => {
+      const blogContent = document.getElementById("blog-content");
+      blogContent.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }, 100);
   };
 
   const estilo = {
@@ -125,7 +128,7 @@ export const NavBar = () => {
           <div className="pt-2 ml-10 max-lg:hidden">
             <button
               onClick={() => scrollToContactoContent()}
-              className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline font-bold text-white font-custom"
+              className="py-1 ml-2 px-3 mb-3 rounded bg-emerald-500 transition-all duration-400 hover:underline font-bold text-white font-custom"
             >
               Comunícate con nosotros
             </button>

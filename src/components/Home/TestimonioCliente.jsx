@@ -5,13 +5,13 @@ import caso_cliente from "../../assets/video/caso_cliente.mp4";
 export const TestimonioCliente = () => {
   return (
     <>
-      <section className="grid grid-rows-1 md:grid-cols-2 md:h-[700px] text-center mx-5 mb-10 items-center">
+      <section className="grid grid-rows-1 xl:grid-cols-2 xl:h-[700px] text-center mx-5 mb-10 items-center ">
         <div className="flex items-center">
-          <video className="w-full h-full border mx-5" controls>
+          <video className="w-full h-full border xl:mx-5" controls>
             <source src={caso_cliente} type="video/mp4" />
           </video>
         </div>
-        <div className="mt-10 h-auto">
+        <div className="mt-10 h-auto xl:ml-10">
           {" "}
           <p className="uppercase text-left font-bold font-overpass md:w-3/4">
             Conoce nuestras historias de{" "}

@@ -1,10 +1,24 @@
 import React from "react";
 import maximaLogoFull from "../../assets/maximaLogoFull.svg";
-import { FiMapPin } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+  const navigate = useNavigate();
+  const scrollToBlogContent = () => {
+    navigate("/");
+    setTimeout(() => {
+      const contactoContent = document.getElementById("blog-content");
+      contactoContent.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }, 100);
+  };
+
   return (
     <section className="grid grid-rows-1 md:grid-cols-3 bg-zinc-900 md:h-[300px] mt-10 justify-center items-center md:pl-56">
       <div className="text-white">
@@ -35,20 +49,26 @@ export const Footer = () => {
       <div className="text-white text-center md:text-left">
         <p className="text-3xl font-bold font-overpass">Páginas</p>
         <ul className="md:text-left">
-          <li>
-            <a href="">Inicio</a>
+          <Link to="/" className="hover:text-emerald-500 cursor-pointer">
+            <p>Inicio</p>
+          </Link>
+          <Link
+            to="/soluciones"
+            className="hover:text-emerald-500 cursor-pointer"
+          >
+            <p>Soluciones</p>
+          </Link>
+          <Link to="/maxima" className="hover:text-emerald-500 cursor-pointer">
+            <p>¿Por qué Máxima?</p>
+          </Link>
+          <li className="hover:text-emerald-500 cursor-pointer">
+            <p>Casos de exito</p>
           </li>
-          <li>
-            <a href="">Soluciones</a>
-          </li>
-          <li>
-            <a href="">¿Por qué Máxima?</a>
-          </li>
-          <li>
-            <a href="">Casos de exito</a>
-          </li>
-          <li>
-            <a href="">Blog</a>
+          <li
+            onClick={() => scrollToBlogContent()}
+            className="hover:text-emerald-500 cursor-pointer"
+          >
+            <p>Blog</p>
           </li>
         </ul>
       </div>

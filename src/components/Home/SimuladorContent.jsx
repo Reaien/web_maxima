@@ -20,14 +20,14 @@ export const SimuladorContent = () => {
           </p>
         </p>
       </div>
-      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[400px] mb-20">
+      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[450px] mb-20">
         <div className="mt-10">
           <p className="font-bold text-5xl font-overpass text-center">
             <span className="text-emerald-500"> Experiencias </span>
             de nuestra escuela
           </p>
           <div className="grid gird-row md:grid-cols-3 text-center mt-10 justify-center">
-            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
+            <div className="md:flex  justify-center flex-wrap  max-md:mb-5 mx-auto">
               <p className="font-semibold text-sm font-overpass">
                 Experiencia espacios confinados
               </p>
@@ -37,17 +37,17 @@ export const SimuladorContent = () => {
                 alt="rombo1"
               />
             </div>
-            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
+            <div className="md:flex  justify-center flex-wrap  max-md:mb-5 mx-auto">
               <p className="font-semibold text-sm font-overpass">
                 Experiencia simulador de uso de extintor
               </p>
               <img
-                className="w-52 drop-shadow-md mt-3"
+                className="w-52 drop-shadow-md mt-3 max-md:ml-8"
                 src={rombo_extintor_2}
-                alt="rombo2"
+                alt="rombo1"
               />
             </div>
-            <div className="flex justify-center flex-wrap px-5 max-md:mb-5">
+            <div className="md:flex  justify-center flex-wrap  max-md:mb-5 mx-auto">
               <p className="font-semibold text-sm font-overpass">
                 Experiencia trabajo en altura
               </p>
@@ -58,8 +58,8 @@ export const SimuladorContent = () => {
               />
             </div>
           </div>
-          <Link className="flex justify-end mt-1 font-overpass font-bold focus:cursor-pointer ">
-            <p className="text-emerald-500 hover:underline">
+          <Link className="md:flex  justify-end xl:mt-6 font-overpass font-bold focus:cursor-pointer ">
+            <p className="text-emerald-500 hover:underline text-center">
               Explora todos nuestros cursos
             </p>
           </Link>
