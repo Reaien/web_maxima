@@ -21,7 +21,7 @@ export const EscuelaVR = () => {
         </div>
         <div className="pt-28">
           <img
-            className=" mx-auto shadow-lg border rounded-full  animate-bounce animate-infinite animate-duration-[3000ms] animate-ease-out"
+            className="w-80 mx-auto shadow-lg border rounded-full  animate-bounce animate-infinite animate-duration-[3000ms] animate-ease-out"
             src={Oculus}
             alt="Foto Gerente"
           />
