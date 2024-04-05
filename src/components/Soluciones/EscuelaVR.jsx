@@ -1,9 +1,9 @@
 import React from "react";
 import Oculus from "../../assets/oculus.webp";
-import rombo_confinado_3 from "../../assets/rombo_confinado_3.webp";
 import logo_vr_1 from "../../assets/logo_vr_1.webp";
 import logo_vr_2 from "../../assets/logo_vr_2.webp";
 import logo_vr_3 from "../../assets/logo_vr_3.webp";
+import logo_vr_4 from "../../assets/logo_vr_4.webp";
 import logo_vr_5 from "../../assets/logo_vr_5.webp";
 
 export const EscuelaVR = () => {
@@ -26,7 +26,7 @@ export const EscuelaVR = () => {
         </div>
         <div className="pt-28">
           <img
-            className="w-80 mx-auto shadow-lg border rounded-full  animate-bounce animate-infinite animate-duration-[7000ms] animate-ease-out"
+            className="w-80 mx-auto shadow-lg border rounded-full  animate-bounce animate-infinite animate-duration-[4000ms]"
             src={Oculus}
             alt="Foto Oculus"
           />
@@ -37,13 +37,13 @@ export const EscuelaVR = () => {
           Simulador de escuela de riesgos
         </p>
       </div>
-      <section className="grid grid-rows-2 mt-12 max-md:-mb-80 xl:-mb-32">
+      <section className="grid grid-rows-2 mt-12 max-md:-mb-80 2xl:-mb-32">
         {/* primera fila de experiencias */}
         <div className="mt-5">
           <p className="font-bold md:text-7xl text-5xl  font-overpass text-center">
-            <span className="text-emerald-500 ">Experiencias </span>
+            <span className="text-emerald-500 ">Experiencias VR</span>
           </p>
-          {/*figuras */}
+          {/* figuras */}
           <div className="grid grid-rows-1 md:grid-cols-3 text-center mt-10 justify-center">
             <div className="max-md:mb-5 mx-auto animate-fade animate-once animate-duration-[3000ms] animate-delay-[500ms] animate-ease-out">
               <p className="font-semibold text-2xl font-overpass">
@@ -55,7 +55,7 @@ export const EscuelaVR = () => {
                 alt="rombo1"
               />
             </div>
-            <div className="max-md:mb-5 mx-auto animate-fade animate-once animate-duration-[3000ms] animate-delay-[1000ms] animate-ease-out">
+            <div className="max-md:mb-5 mx-auto animate-fade animate-once animate-duration-[3000ms]  animate-delay-[1000ms] animate-ease-out">
               <p className="font-semibold text-2xl font-overpass">
                 Interacción hombre máquina
               </p>
@@ -65,7 +65,7 @@ export const EscuelaVR = () => {
                 alt="rombo1"
               />
             </div>
-            <div className="max-md:mb-5 mx-auto animate-fade animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-out">
+            <div className="max-md:mb-5 mx-auto animate-fade animate-once animate-duration-[3000ms]  animate-delay-[1500ms] animate-ease-out">
               <p className="font-semibold text-2xl font-overpass">
                 Bloqueo Loto
               </p>
@@ -79,17 +79,17 @@ export const EscuelaVR = () => {
         </div>
         {/* segunda fila de experiencias */}
         <div className="grid md:grid-cols-2 items-center justify-center text-center max-md:h-[100px] md:justify-self-center xl:-mt-52">
-          <div className="xl:pr-32 mx-auto animate-fade animate-once animate-duration-[3000ms] animate-delay-[2000ms] animate-ease-out">
+          <div className="xl:pr-32 mx-auto animate-fade animate-once animate-duration-[3000ms]  animate-delay-[2000ms] animate-ease-out">
             <p className="font-semibold text-2xl font-overpass">
               Espacios confinados
             </p>
             <img
               className="w-80 drop-shadow-lg mt-3"
-              src={rombo_confinado_3}
+              src={logo_vr_4}
               alt="rombo1"
             />
           </div>
-          <div className="xl:pl-32 max-md:mt-5 mx-auto animate-fade animate-once animate-duration-[3000ms] animate-delay-[2500ms] animate-ease-out">
+          <div className="xl:pl-32 mx-auto animate-fade animate-once animate-duration-[3000ms]  animate-delay-[2500ms] animate-ease-out">
             <p className="font-semibold text-2xl font-overpass">
               Uso de extintores
             </p>
