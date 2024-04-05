@@ -58,7 +58,10 @@ export const SimuladorContent = () => {
               />
             </div>
           </div>
-          <Link className="md:flex  justify-end xl:mt-6 font-overpass font-bold focus:cursor-pointer ">
+          <Link
+            to="/soluciones"
+            className="md:flex  justify-end xl:mt-6 font-overpass font-bold focus:cursor-pointer "
+          >
             <p className="text-emerald-500 hover:underline text-center">
               Explora todos nuestros cursos
             </p>
