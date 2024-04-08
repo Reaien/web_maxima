@@ -1,5 +1,4 @@
 import React from "react";
-import liston from "../../assets/liston.svg";
 
 export const CardPricing = ({
   colorListon,

@@ -9,34 +9,24 @@ import { useInView } from "react-intersection-observer";
 
 export const EscuelaVR = () => {
   //creamos hook para observar
-  const [isVisibleFirstDiv, setIsVisibleFirstDiv] = useState(false);
-  const [isVisibleSecondDiv, setIsVisibleSecondDiv] = useState(false);
-  //ref de cursos
-  const { refFirstDiv, inViewFirstDiv } = useInView({
-    threshold: 0.3,
-  });
-  const { refSecondDiv, inViewSecondDiv } = useInView({
-    threshold: 0.7,
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.02, // Se activará cuando al menos el 50% del componente esté visible
   });
 
+  // Actualiza el estado cuando el componente esté visible en la pantalla
   useEffect(() => {
-    if (inViewFirstDiv && !isVisibleFirstDiv) {
-      setIsVisibleFirstDiv(true);
+    if (inView) {
+      setIsVisible(true);
     }
-  }, [inViewFirstDiv, isVisibleFirstDiv]);
-
-  useEffect(() => {
-    if (inViewSecondDiv && !isVisibleSecondDiv) {
-      setIsVisibleSecondDiv(true);
-    }
-  }, [inViewSecondDiv, isVisibleSecondDiv]);
+  }, [inView]);
 
   return (
     <>
       <section>
         <section
-          ref={refFirstDiv}
-          className={`grid grid-rows-1 xl:grid-cols-2 mx-auto  xl:px-40 px-10 mt-20 bg-white mb-20 xl:pb-10 shadow-lg justify-center items-center xl:h-[500px] ${isVisibleFirstDiv ? "visible animate-fade-right animate-duration-2000" : "invisible"}`}
+          ref={ref}
+          className={`grid grid-rows-1 xl:grid-cols-2 mx-auto  xl:px-40 px-10 mt-20 bg-white mb-20 xl:pb-10 shadow-lg justify-center items-center xl:h-[500px] ${isVisible ? "visible animate-fade-right animate-duration-700" : "invisible"}`}
         >
           <div className=" md:w-[600px] ">
             <h4 className="md:text-5xl text-5xl font-overpass md:text-left mt-6 ">
@@ -75,11 +65,11 @@ export const EscuelaVR = () => {
             </p>
             {/* figuras */}
             <div
-              ref={refSecondDiv}
+              ref={ref}
               className="grid grid-rows-1 md:grid-cols-3 text-center mt-10 justify-center"
             >
               <div
-                className={`max-md:mb-5 mx-auto ${isVisibleSecondDiv ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Trabajo en alturas
@@ -91,7 +81,7 @@ export const EscuelaVR = () => {
                 />
               </div>
               <div
-                className={`max-md:mb-5 mx-auto ${isVisibleSecondDiv ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2000ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2000ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Interacción hombre máquina
@@ -103,7 +93,7 @@ export const EscuelaVR = () => {
                 />
               </div>
               <div
-                className={`max-md:mb-5 mx-auto ${isVisibleSecondDiv ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2500ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2500ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Bloqueo Loto
@@ -119,7 +109,7 @@ export const EscuelaVR = () => {
           {/* segunda fila de experiencias */}
           <div className="grid md:grid-cols-2 items-center justify-center text-center max-md:h-[100px] md:justify-self-center xl:-mt-52">
             <div
-              className={`xl:pr-32 mx-auto ${isVisibleSecondDiv ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3000ms] animate-ease-out" : "invisible"} `}
+              className={`xl:pr-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3000ms] animate-ease-out" : "invisible"} `}
             >
               <p className="font-semibold text-2xl font-overpass">
                 Espacios confinados
@@ -131,7 +121,7 @@ export const EscuelaVR = () => {
               />
             </div>{" "}
             <div
-              className={`xl:pl-32 mx-auto ${isVisibleSecondDiv ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3500ms] animate-ease-out" : "invisible"} `}
+              className={`xl:pl-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3500ms] animate-ease-out" : "invisible"} `}
             >
               <p className="font-semibold text-2xl font-overpass">
                 Uso de extintores
