@@ -5,6 +5,7 @@ import { ImageBar } from "../components/Layouts/ImageBar.jsx";
 import casos_exito_cover from "../assets/casos_exito_cover.webp";
 
 import React from "react";
+import Video_Cards from "./Casos_Exito/Video_Cards.jsx";
 
 const CasosDeExito = () => {
   return (
@@ -12,6 +13,7 @@ const CasosDeExito = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Casos de éxito" imageURL={casos_exito_cover} />
+      <Video_Cards />
       <Footer />
     </React.Fragment>
   );

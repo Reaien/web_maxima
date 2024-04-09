@@ -11,7 +11,7 @@ export const EscuelaVR = () => {
   //creamos hook para observar
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.02, // Se activará cuando al menos el 50% del componente esté visible
+    threshold: 0.01, // Se activará cuando al menos el 50% del componente esté visible
   });
 
   // Actualiza el estado cuando el componente esté visible en la pantalla
@@ -42,7 +42,7 @@ export const EscuelaVR = () => {
               <span className="text-emerald-500">Máxima Formación VR</span>
             </p>
           </div>
-          <div className="pt-28 animate-bounce animate-infinite animate-duration-[4000ms]">
+          <div className="pt-28 animate-bounce animate-infinite animate-duration-[2000ms]">
             <img
               className="w-80 mx-auto shadow-lg border rounded-full"
               src={Oculus}
@@ -69,7 +69,7 @@ export const EscuelaVR = () => {
               className="grid grid-rows-1 md:grid-cols-3 text-center mt-10 justify-center"
             >
               <div
-                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[1500ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2500ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Trabajo en alturas
@@ -81,7 +81,7 @@ export const EscuelaVR = () => {
                 />
               </div>
               <div
-                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2000ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3000ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Interacción hombre máquina
@@ -93,7 +93,7 @@ export const EscuelaVR = () => {
                 />
               </div>
               <div
-                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[2500ms] animate-ease-out" : "invisible"} `}
+                className={`max-md:mb-5 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3500ms] animate-ease-out" : "invisible"} `}
               >
                 <p className="font-semibold text-2xl font-overpass">
                   Bloqueo Loto
@@ -109,7 +109,7 @@ export const EscuelaVR = () => {
           {/* segunda fila de experiencias */}
           <div className="grid md:grid-cols-2 items-center justify-center text-center max-md:h-[100px] md:justify-self-center xl:-mt-52">
             <div
-              className={`xl:pr-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3000ms] animate-ease-out" : "invisible"} `}
+              className={`xl:pr-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3500ms] animate-ease-out" : "invisible"} `}
             >
               <p className="font-semibold text-2xl font-overpass">
                 Espacios confinados
@@ -121,7 +121,7 @@ export const EscuelaVR = () => {
               />
             </div>{" "}
             <div
-              className={`xl:pl-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[3500ms] animate-ease-out" : "invisible"} `}
+              className={`xl:pl-32 mx-auto ${isVisible ? "visible animate-fade animate-once animate-duration-[3000ms] animate-delay-[4000ms] animate-ease-out" : "invisible"} `}
             >
               <p className="font-semibold text-2xl font-overpass">
                 Uso de extintores
