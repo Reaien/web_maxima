@@ -110,12 +110,13 @@ export const NavBar = () => {
             >
               ¿Por qué Máxima?
             </Link>
-            <button
+            <Link
+              to={"/casos_exito"}
               className="mx-6 hover:text-emerald-600 focus:text-emerald-700 flex items-center duration-500 font-light transition-all duration-400 hover:underline font-custom"
               href="#"
             >
               Casos de éxito
-            </button>
+            </Link>
 
             <button
               onClick={() => scrollToBlogContent()}

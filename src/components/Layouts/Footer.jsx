@@ -61,9 +61,12 @@ export const Footer = () => {
           <Link to="/maxima" className="hover:text-emerald-500 cursor-pointer">
             <p>¿Por qué Máxima?</p>
           </Link>
-          <li className="hover:text-emerald-500 cursor-pointer">
+          <Link
+            to="/casos_exito"
+            className="hover:text-emerald-500 cursor-pointer"
+          >
             <p>Casos de exito</p>
-          </li>
+          </Link>
           <li
             onClick={() => scrollToBlogContent()}
             className="hover:text-emerald-500 cursor-pointer"

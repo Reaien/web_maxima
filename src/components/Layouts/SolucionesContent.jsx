@@ -36,7 +36,8 @@ export const SolucionesContent = () => {
               </div>
             </Link>
           </a>
-          <a
+          <Link
+            to={"/soluciones"}
             onMouseEnter={() => handleMouseEnter("imagenCurso")}
             onMouseLeave={handleMouseLeave}
             className="mb-3 hover:text-emerald-600 hover:underline"
@@ -53,8 +54,9 @@ export const SolucionesContent = () => {
                 transforma la trayectoria profesional de tus empleados."
               </p>
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
+            to={"/soluciones"}
             onMouseEnter={() => handleMouseEnter("imagenVR")}
             onMouseLeave={handleMouseLeave}
             className="mb-3 hover:text-emerald-600 hover:underline"
@@ -62,7 +64,7 @@ export const SolucionesContent = () => {
           >
             <div>
               <p className="mt-10 font-bold font-overpass ">
-                Escuela de riesgos críticos con Realidad Virtual
+                Simulador de escuela de riesgos
               </p>
             </div>
             <div className="text-left">
@@ -72,7 +74,7 @@ export const SolucionesContent = () => {
                 vanguardista de formación."
               </p>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="flex justify-center items-center w-full">
           {/* Renderizado condicional de la imagen segun el state onMouseEnter */}

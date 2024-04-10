@@ -3,16 +3,16 @@ import cliente_prueba from "../../assets/clientes_casos_exito/cliente_prueba.png
 
 const CardVideoExito = () => {
   return (
-    <div className="relative flex flex-col bg-slate-50 h-[550px] w-[400px] shadow-lg rounded-lg">
+    <div className="relative flex flex-col bg-slate-50 h-[450px] w-[300px] shadow-lg rounded-lg">
       <img
         className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
         src={cliente_prueba}
         alt="cliente"
       />
-      <div className=" flex flex-col ml-5 mt-5 align-top items-start max-w-44">
-        <p className="font-bold text-xl font-overpass">Francisco Yañez</p>
-        <p className="opacity-55 text-sm">Coordinador HSEQ</p>
-        <p className="opacity-55 text-sm">Power Electronics</p>
+      <div className="relative flex flex-col ml-5 mt-5 align-top items-start max-w-44">
+        <p className="font-bold text-base font-overpass">Francisco Yañez</p>
+        <p className="opacity-55 text-xs">Coordinador HSEQ</p>
+        <p className="opacity-55 text-xs">Power Electronics</p>
       </div>
       <div className="relative flex flex-col h-[400px] align-bottom items-start justify-end">
         <p className="font-overpass -mb-10 text-7xl opacity-70">"</p>
