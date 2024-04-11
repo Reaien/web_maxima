@@ -177,7 +177,9 @@ export const NavBar = () => {
         </div>
 
         <div className="bg-white hover:cursor-pointer hover:bg-emerald-500 hover:text-white transition-colors duration-700">
-          <p className="py-4 p-5">Casos de éxito</p>
+          <Link to="/casos_exito" style={estilo}>
+            <p className="py-4 p-5">Casos de éxito</p>
+          </Link>
         </div>
 
         <div
