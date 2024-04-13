@@ -28,6 +28,7 @@ const Video_Cards = () => {
                   empresa={card.empresa}
                   frase={card.frase}
                   foto={card.foto}
+                  video={card.video}
                 />
               );
             })}

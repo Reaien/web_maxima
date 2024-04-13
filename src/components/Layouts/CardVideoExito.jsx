@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "../Layouts/Modal.jsx";
-import caso_cliente from "../../assets/video/caso_cliente.mp4";
-import { RiCloseCircleFill } from "react-icons/ri";
 
-const CardVideoExito = ({ nombre, cargo, empresa, frase, foto }) => {
+const CardVideoExito = ({ nombre, cargo, empresa, frase, foto, video }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -33,15 +31,10 @@ const CardVideoExito = ({ nombre, cargo, empresa, frase, foto }) => {
           </button>
         </div>
       </div>
-      <Modal open={openModal} onClose={() => useState(false)}>
-        <div
-          className={`bg-white rounded-xl px-2 pb-3 pt-7 transition-all ${openModal ? "scale-90 opacity-100" : "scale-100 opacity-0"}`}
-        >
-          <RiCloseCircleFill className="absolute p-2 right-1 top-1 text-emerald-500  transition-all w-20 h-20" />
-          <video className="w-[800px] h-[500px] border mx-5" controls>
-            <source src={caso_cliente} type="video/mp4" />
-          </video>
-        </div>
+      <Modal open={openModal} onClose={() => setOpenModal(false)}>
+        <video controls>
+          <source src={video} type="video/mp4" />
+        </video>
       </Modal>
     </>
   );
