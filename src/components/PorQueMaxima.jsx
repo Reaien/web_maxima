@@ -5,7 +5,7 @@ import NuestraMision from "./PorQueMaxima/NuestraMision.jsx";
 import { ManagerProposal } from "./PorQueMaxima/ManagerProposal.jsx";
 import { Footer } from "../components/Layouts/Footer.jsx";
 import { ImageBar } from "../components/Layouts/ImageBar.jsx";
-import imagen_mision from "../assets/capa_maxima.webp";
+import imagen_mision from "../assets/images/capa_maxima.webp";
 
 const PorQueMaxima = () => {
   return (

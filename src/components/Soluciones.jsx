@@ -5,8 +5,9 @@ import { Footer } from "../components/Layouts/Footer.jsx";
 import { ImageBar } from "../components/Layouts/ImageBar.jsx";
 import { CardPricing } from "../components/Soluciones/CardPricing.jsx";
 import { EscuelaVR } from "../components/Soluciones/EscuelaVR.jsx";
+import { Experiencias } from "../components/Soluciones/Experiencias.jsx";
 
-import soluciones_maxima_cover from "../assets/soluciones_maxima_cover.webp";
+import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.webp";
 
 const Soluciones = () => {
   return (
@@ -44,6 +45,7 @@ const Soluciones = () => {
         </div>
       </div>
       <EscuelaVR />
+      <Experiencias />
       <Footer />
     </React.Fragment>
   );

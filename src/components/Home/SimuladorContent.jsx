@@ -1,15 +1,15 @@
 import React from "react";
 import video from "../../assets/video/promo_vr_maxima.mp4";
-import rombo_confinado_3 from "../../assets/rombo_confinado_3.webp";
-import rombo_extintor_2 from "../../assets/rombo_extintor_2.webp";
-import rombo_trabajo_altura_1 from "../../assets/rombo_trabajo_altura_1.webp";
+import rombo_confinado_3 from "../../assets/images/rombo_confinado_3.webp";
+import rombo_extintor_2 from "../../assets/images/rombo_extintor_2.webp";
+import rombo_trabajo_altura_1 from "../../assets/images/rombo_trabajo_altura_1.webp";
 import { Link } from "react-router-dom";
 
 export const SimuladorContent = () => {
   return (
     <>
       <div className="grid grid-rows-1 items-center justify-center text-center">
-        <p>
+        <div>
           {" "}
           <p className="text-5xl  pl-6 font-bold font-overpass ">
             Explora un futuro más seguro:
@@ -18,7 +18,7 @@ export const SimuladorContent = () => {
             Escuela de{" "}
             <span className="text-emerald-500 ">Riesgos Críticos VR</span>
           </p>
-        </p>
+        </div>
       </div>
       <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[450px] mb-20">
         <div className="mt-10">

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import maximaLogoFull from "../../assets/maximaLogoFull.svg";
+import maximaLogoFull from "../../assets/images/maximaLogoFull.svg";
 import { ToggleMenuXL } from "./ToggleMenuXL.jsx";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";

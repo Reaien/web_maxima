@@ -3,6 +3,7 @@ import { Modal } from "../Layouts/Modal.jsx";
 
 const CardVideoExito = ({ nombre, cargo, empresa, frase, foto, video }) => {
   const [openModal, setOpenModal] = useState(false);
+  const videoRef = React.useRef(null);
   return (
     <>
       <div className="relative flex flex-col bg-slate-50 h-[450px] w-[300px] shadow-lg rounded-lg">
@@ -31,10 +32,22 @@ const CardVideoExito = ({ nombre, cargo, empresa, frase, foto, video }) => {
           </button>
         </div>
       </div>
-      <Modal open={openModal} onClose={() => setOpenModal(false)}>
-        <video controls>
+      <Modal
+        open={openModal}
+        onClose={() => {
+          setOpenModal(false);
+          if (videoRef.current) {
+            videoRef.current.pause();
+          }
+        }}
+      >
+        <video className="rounded-lg" ref={videoRef} controls>
           <source src={video} type="video/mp4" />
         </video>
+        {
+          openModal ===
+            false /* quiero pausar el video si el modal está en false porque estará cerrado */
+        }
       </Modal>
     </>
   );

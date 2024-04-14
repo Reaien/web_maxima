@@ -81,7 +81,7 @@ export const SolucionesContent = () => {
           {hoveredImage && isWideScreen && (
             <img
               className="md:w-[530px] animate-fade-left rounded-md shadow-lg"
-              src={`../src/assets/${hoveredImage}.webp`}
+              src={`../src/assets/images/${hoveredImage}.webp`}
               alt="imagen"
             />
           )}

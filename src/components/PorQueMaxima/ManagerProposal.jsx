@@ -1,5 +1,5 @@
 import React from "react";
-import foto_gerente from "../../assets/foto_gerente.jpeg";
+import foto_gerente from "../../assets/images/foto_gerente.jpeg";
 
 export const ManagerProposal = () => {
   return (

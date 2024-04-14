@@ -10,11 +10,11 @@ export const Modal = ({ open, onClose, children }) => {
         onClick={(e) => {
           e.stopPropagation;
         }}
-        className={`bg-white  transition-all ${open ? "scale-90 opacity-100" : "scale-100 opacity-0"}`}
+        className={`flex flex-col items-end bg-transparent  transition-all ${open ? "scale-90 opacity-100" : "scale-100 opacity-0"}`}
       >
         <RiCloseCircleFill
           onClick={onClose}
-          className="absolute z-10 right-1 top-1 text-emerald-500 hover:text-emerald-600 drop-shadow-lg  transition-all w-20 h-20 "
+          className="z-20 -mb-6 fill-emerald-500 hover:fill-emerald-600 drop-shadow-lg  transition-all w-20 h-20 "
         />
         {children}
       </div>
