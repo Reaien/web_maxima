@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import carousel1 from "../../assets/images/carousel1.webp";
 import carousel2 from "../../assets/images/carousel2.webp";
 import carousel3 from "../../assets/images/carousel3.webp";
-import { SlArrowLeft } from "react-icons/sl";
-import { SlArrowRight } from "react-icons/sl";
+import { ArrowLeft } from "../icons/ArrowLeft.jsx";
+import { ArrowRight } from "../icons/ArrowRight.jsx";
 
 export const Carousel = () => {
   const scrollToContactoContent = () => {
@@ -100,35 +100,36 @@ export const Carousel = () => {
 
   return (
     <>
-      <section className="w-full h-[768px] mt-4 group ">
+      <section className="w-auto mt-4 ml-3 group ">
         <div
+          rel="preload"
           style={{
             backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
           }}
-          className="w-auto h-full lg:mx-10 md:rounded-2xl   bg-top bg-cover duration-500 md:shadow-lg"
+          className="w-auto h-[540px]  lg:mx-10 md:rounded-2xl   bg-cover bg-center duration-500 md:shadow-lg"
         ></div>
 
         {/* flecha izquierda */}
         <div
           onClick={prevSlide}
-          className="hidden group-hover:block absolute z-40 top-[50%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white/20 cursor-pointer"
+          className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
         >
-          <SlArrowLeft className="w-5 h-5 text-white/60" />
+          <ArrowLeft className="w-5 h-5 text-black" />
         </div>
 
         {/* flecha derecha */}
         <div
           onClick={nextSlide}
-          className="hidden group-hover:block absolute z-40 top-[50%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-black/20 cursor-pointer"
+          className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
         >
-          <SlArrowRight className="w-5 h-5 text-white/60" />
+          <ArrowRight className="w-4 h-5 text-black" />
         </div>
-        <div className="absolute inset-0 w-98 h-[768px] mt-28 bg-slate-600 md:right-[55%]  xl:pt-5 lg:mx-10  md:rounded-l-2xl bg-center bg-cover">
-          <div className="mt-16 xl:mt-32 ml-16 max-md:ml-5 w-auto ">
-            <p className="font-bold text-left  text-white w-3/4  font-overpass text-4xl xl::text-5xl">
+        <div className="absolute inset-0  h-[768px] mt-28  md:right-[55%]  xl:pt-5 lg:mx-10  md:rounded-l-2xl bg-center bg-cover">
+          <div className="mt-16 md:ml-16 ml-7  ">
+            <p className="font-bold text-left  text-white  font-overpass text-2xl 2xl:w-2/4 md:text-xl xl:text-2xl">
               {slideImages[currentIndex].content.title}
             </p>
-            <p className=" mt-5 md:mt-10 font-bold text-left text-white w-3/4 text-lg font-overpass max-md:text-lg">
+            <p className=" mt-5 font-bold text-left text-white  text-base font-overpass 2xl:w-3/4  max-md:text-base">
               {slideImages[currentIndex].content.subTitle}
             </p>
             <div className=" gap-2 mt-5 md:mt-10">

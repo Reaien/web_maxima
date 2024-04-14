@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa6";
 import Swal from "sweetalert2";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
+import { InstagramIcon } from "../icons/InstagramIcon";
+import { TiktokIcon } from "../icons/TiktokIcon";
 
 export const Contactanos = () => {
   // useState para el captcha y pasar el estado a true si se realizó el captcha
@@ -61,14 +60,31 @@ export const Contactanos = () => {
             </p>
           </div>
           <div className="flex md:justify-start gap-5 justify-center text-center text-4xl px-3 my-5 ">
-            <FaFacebook className="hover:text-emerald-500 duration-500" />
-            <FaLinkedin className="hover:text-emerald-500 duration-500" />
-            <FaInstagram className="hover:text-emerald-500 duration-500" />
-            <FaTiktok className="hover:text-emerald-500 duration-500" />
+            <a
+              href="https://www.linkedin.com/company/maxima-formacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+            </a>
+            <a
+              href="https://www.instagram.com/maxima.formacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@maximaformacion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TiktokIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+            </a>
           </div>
         </div>
         <div className=" xl:mr-32 mb-10">
-          <div className=" shadow-md rounded-2xl bg-white">
+          <div className=" shadow-lg rounded-2xl bg-white border-2">
             <form
               className="px-3 md:px-28 pb-5 mt-10"
               ref={form}

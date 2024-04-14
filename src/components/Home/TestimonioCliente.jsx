@@ -1,6 +1,6 @@
 import React from "react";
-import { BsCheck2All } from "react-icons/bs";
 import caso_cliente from "../../assets/video/caso_cliente.mp4";
+import { Check } from "../icons/Check.jsx";
 
 export const TestimonioCliente = () => {
   return (
@@ -29,17 +29,17 @@ export const TestimonioCliente = () => {
           </p>
           <div className="mt-5">
             <p className="font-overpass text-left mt-2 flex items-center">
-              <BsCheck2All className="text-emerald-500 mr-4 text-4xl" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
               Mejora las competencias necesarias para impulsar la seguridad
               laboral y acelerar la transformación en tu empresa.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <BsCheck2All className="text-emerald-500 mr-4 text-4xl" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
               Aprende y aplica rápidamente las habilidades en prevención de
               riesgos a través de proyectos prácticos y aprendizaje inmersivo.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <BsCheck2All className="text-emerald-500 mr-4 text-4xl" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
               Utiliza nuestra metodología de vanguardia en enseñanza y
               simulación para impulsar las habilidades de tus empleados.
             </p>

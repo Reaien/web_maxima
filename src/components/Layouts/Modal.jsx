@@ -1,5 +1,5 @@
 import React from "react";
-import { RiCloseCircleFill } from "react-icons/ri";
+import { CloseIcon } from "../icons/CloseIcon";
 
 export const Modal = ({ open, onClose, children }) => {
   return (
@@ -12,9 +12,9 @@ export const Modal = ({ open, onClose, children }) => {
         }}
         className={`flex flex-col items-end bg-transparent  transition-all ${open ? "scale-90 opacity-100" : "scale-100 opacity-0"}`}
       >
-        <RiCloseCircleFill
+        <CloseIcon
           onClick={onClose}
-          className="z-20 -mb-6 fill-emerald-500 hover:fill-emerald-600 drop-shadow-lg  transition-all w-20 h-20 "
+          className="z-20 -mb-6 fill-emerald-500 hover:fill-emerald-600   transition-all w-14 h-14 "
         />
         {children}
       </div>

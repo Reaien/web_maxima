@@ -1,9 +1,9 @@
 import React from "react";
 import maximaLogoFull from "../../assets/images/maximaLogoFull.svg";
-import { FiPhone } from "react-icons/fi";
-import { FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { PhoneIcon } from "../icons/PhoneIcon";
+import { MailIcon } from "../icons/MailIcon";
 
 export const Footer = () => {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ export const Footer = () => {
       </div>
       <div className="text-white text-left  gap-3">
         <div className="flex items-center mb-5">
-          <FiPhone className="w-[30px] h-[30px] " />
+          <PhoneIcon className="w-[30px] h-[30px] " />
           <div className="ml-3">
             <p className="font-overpass font-bold">
               Teléfono:{" "}
@@ -35,7 +35,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex items-center mb-5">
-          <FiMail className="w-[30px] h-[30px] " />
+          <MailIcon className="w-[30px] h-[30px] " />
           <div className="ml-3">
             <p className="font-overpass font-bold">
               Correo:{" "}
