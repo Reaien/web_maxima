@@ -101,29 +101,32 @@ export const Carousel = () => {
   return (
     <>
       <section className="w-auto mt-4 ml-3 group ">
-        <div
-          rel="preload"
-          style={{
-            backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
-          }}
-          className="w-auto h-[540px]  lg:mx-10 md:rounded-2xl   bg-cover bg-center duration-500 md:shadow-lg"
-        ></div>
+        <div>
+          <div
+            rel="preload"
+            style={{
+              backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
+            }}
+            className="w-auto h-[540px]  lg:mx-10 md:rounded-2xl   bg-cover bg-center duration-500 md:shadow-lg"
+          ></div>
 
-        {/* flecha izquierda */}
-        <div
-          onClick={prevSlide}
-          className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
-        >
-          <ArrowLeft className="w-5 h-5 text-black" />
+          {/* flecha izquierda */}
+          <div
+            onClick={prevSlide}
+            className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
+          >
+            <ArrowLeft className="w-5 h-5 text-black" />
+          </div>
+
+          {/* flecha derecha */}
+          <div
+            onClick={nextSlide}
+            className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
+          >
+            <ArrowRight className="w-4 h-5 text-black" />
+          </div>
         </div>
 
-        {/* flecha derecha */}
-        <div
-          onClick={nextSlide}
-          className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
-        >
-          <ArrowRight className="w-4 h-5 text-black" />
-        </div>
         <div className="absolute inset-0  h-[768px] mt-28  md:right-[55%]  xl:pt-5 lg:mx-10  md:rounded-l-2xl bg-center bg-cover">
           <div className="mt-16 md:ml-16 ml-7  ">
             <p className="font-bold text-left  text-white  font-overpass text-2xl 2xl:w-2/4 md:text-xl xl:text-2xl">
