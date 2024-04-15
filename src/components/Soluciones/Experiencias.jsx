@@ -10,7 +10,7 @@ export const Experiencias = () => {
   //creamos hook para observar
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.5, // Se activará cuando al menos el 50% del componente esté visible
+    threshold: 0.1, // Se activará cuando al menos el 50% del componente esté visible
   });
 
   // Actualiza el estado cuando el componente esté visible en la pantalla

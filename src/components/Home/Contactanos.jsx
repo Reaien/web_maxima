@@ -83,7 +83,7 @@ export const Contactanos = () => {
             </a>
           </div>
         </div>
-        <div className=" xl:mr-32 mb-10">
+        <div className=" xl:mr-32 mb-10 mt-10">
           <div className=" shadow-lg rounded-2xl bg-white border-2">
             <form
               className="px-3 md:px-28 pb-5 mt-10"

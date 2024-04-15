@@ -107,7 +107,7 @@ export const Carousel = () => {
             style={{
               backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
             }}
-            className="w-auto h-[540px]  lg:mx-10 md:rounded-2xl   bg-cover bg-center duration-500 md:shadow-lg"
+            className="w-auto h-[540px] lg:mx-10 md:rounded-2xl bg-cover bg-center duration-500 md:shadow-lg"
           ></div>
 
           {/* flecha izquierda */}

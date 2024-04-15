@@ -3,7 +3,7 @@ import React from "react";
 export const CardBlog = ({ titulo, parrafo, foto, fecha }) => {
   return (
     <>
-      <div className="md:w-[415px] w-auto md:h-[480px] bg-white shadow-md rounded-md mb-10 mx-auto">
+      <div className="md:w-[415px] w-auto md:h-auto bg-white shadow-md rounded-md mb-10 mx-auto">
         <p className="mx-10 text-left font-bold text-2xl font-overpass mt-6">
           {titulo}
         </p>

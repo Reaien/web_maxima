@@ -16,7 +16,7 @@ export const TestimonioEmpleado = () => {
             Experiencia de los{" "}
             <span className="text-emerald-600">empleados</span>
           </p>
-          <p className=" font-overpass md:text-center mt-5">
+          <p className=" font-overpass text-left md:text-center mt-5">
             Explora las habilidad que tus empleados obtienen con el programa de
             Máxima Formación
           </p>
