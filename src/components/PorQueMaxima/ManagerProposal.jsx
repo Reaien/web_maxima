@@ -6,7 +6,7 @@ export const ManagerProposal = () => {
     <section className="grid grid-rows-1 xl:grid-cols-2 mx-auto text-center xl:px-40 px-10 mt-20 bg-white mb-20 pb-10 shadow-lg justify-center items-center">
       <div className="mt-14 md:w-[600px]">
         <h4 className="md:text-7xl text-5xl font-overpass md:text-left">
-          Detrás de la <span className="text-emerald-500">seguridad</span> y la
+          Detrás de la <span className="text-emerald-600">seguridad</span> y la
           experiencia única de aprendizaje{" "}
         </h4>
         <p className="md:text-left font-overpass mt-12">

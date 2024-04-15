@@ -8,13 +8,13 @@ export const TestimonioEmpleado = () => {
         <div className="mt-10 h-auto ml-5">
           {" "}
           <p className="uppercase text-center font-bold font-overpass ">
-            Mejora en las <span className="text-emerald-500">habilidades </span>
-            y <span className="text-emerald-500">seguridad</span> de tus
+            Mejora en las <span className="text-emerald-600">habilidades </span>
+            y <span className="text-emerald-600">seguridad</span> de tus
             empleados
           </p>
           <p className="font-bold text-5xl font-overpass mt-12  md:text-center">
             Experiencia de los{" "}
-            <span className="text-emerald-500">empleados</span>
+            <span className="text-emerald-600">empleados</span>
           </p>
           <p className=" font-overpass md:text-center mt-5">
             Explora las habilidad que tus empleados obtienen con el programa de
@@ -22,17 +22,17 @@ export const TestimonioEmpleado = () => {
           </p>
           <div className="mt-5">
             <p className="font-overpass  mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-600 mr-4 text-4xl w-5" />
               Potencia tus habilidades en prevención de riesgos para contribuir
               a la seguridad y el bienestar en tu entorno laboral.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-600 mr-4 text-4xl w-5" />
               Desarrolla tu liderazgo en seguridad para ser un ejemplo y motivar
               a tus compañeros en la adopción de prácticas seguras.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-600 mr-4 text-4xl w-5" />
               Aprende de manera efectiva con proyectos y experiencias inmersivas
               que te permitan aplicar lo aprendido en tu día laboral.
             </p>

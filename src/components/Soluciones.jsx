@@ -15,7 +15,10 @@ const Soluciones = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
-      <div className="grid grid-rows-1 md:grid-cols-2 justify-end ">
+      <div
+        className="grid grid-rows-1 md:grid-cols-2 justify-end "
+        id="cardPricing"
+      >
         <div className="xl:ml-64 animate-fade-right animate-duration-[3000ms]">
           <CardPricing
             colorListon="#059669"
@@ -44,8 +47,13 @@ const Soluciones = () => {
           />
         </div>
       </div>
-      <EscuelaVR />
-      <Experiencias />
+      <div id="escuelaVR">
+        <EscuelaVR />
+      </div>
+
+      <div id="experiencias">
+        <Experiencias />
+      </div>
       <Footer />
     </React.Fragment>
   );

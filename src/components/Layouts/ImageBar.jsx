@@ -9,7 +9,7 @@ export const ImageBar = ({ title, imageURL }) => {
         <div className="flex justify-center">
           <p className="absolute text-3xl md:text-7xl text-white font-bold mt-40 font-overpass">
             {beforeMaxima}
-            <span className="text-emerald-500"> Máxima </span>
+            <span className="text-emerald-600"> Máxima </span>
             {afterMaxima}
           </p>
         </div>

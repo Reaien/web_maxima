@@ -27,7 +27,7 @@ export const EscuelaVR = () => {
           <div className=" md:w-[600px] ">
             <h4 className="md:text-5xl text-5xl font-overpass md:text-left mt-6 ">
               Sé parte de nuestra experiencia{" "}
-              <span className="text-emerald-500">VR</span>
+              <span className="text-emerald-600">VR</span>
             </h4>
             <p className="md:text-left font-overpass mt-12">
               Explora un nuevo mundo de aprendizaje seguro con la realidad
@@ -35,7 +35,7 @@ export const EscuelaVR = () => {
               la gestión de emergencias, nuestra experiencia en realidad virtual
               te preparará para enfrentar cualquier desafío en el lugar de
               trabajo. ¡Descubre la revolución en capacitación en seguridad con{" "}
-              <span className="text-emerald-500">Máxima Formación VR</span>
+              <span className="text-emerald-600">Máxima Formación VR</span>
             </p>
           </div>
           <div className="pt-28 animate-bounce animate-infinite animate-duration-[2000ms]">

@@ -34,7 +34,7 @@ export const Experiencias = () => {
           {/* primera fila de experiencias */}
           <div className="mt-5">
             <p className="font-bold md:text-7xl text-5xl  font-overpass text-center">
-              <span className="text-emerald-500 ">Experiencias VR</span>
+              <span className="text-emerald-600 ">Experiencias VR</span>
             </p>
             {/* figuras */}
             <div

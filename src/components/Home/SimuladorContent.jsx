@@ -3,9 +3,22 @@ import video from "../../assets/video/promo_vr_maxima.mp4";
 import rombo_confinado_3 from "../../assets/images/rombo_confinado_3.webp";
 import rombo_extintor_2 from "../../assets/images/rombo_extintor_2.webp";
 import rombo_trabajo_altura_1 from "../../assets/images/rombo_trabajo_altura_1.webp";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const SimuladorContent = () => {
+  const navigate = useNavigate();
+  //fncion para scroll a componente Experiencias situado en /soluciones
+  const scrollToExperienciasContent = () => {
+    navigate("/soluciones");
+    setTimeout(() => {
+      const blogContent = document.getElementById("experiencias");
+      blogContent.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }, 100);
+  };
   return (
     <>
       <div className="grid grid-rows-1 items-center justify-center text-center">
@@ -16,14 +29,14 @@ export const SimuladorContent = () => {
           </p>
           <p className="text-6xl  pl-6 font-bold font-overpass">
             Escuela de{" "}
-            <span className="text-emerald-500 ">Riesgos Críticos VR</span>
+            <span className="text-emerald-600 ">Riesgos Críticos VR</span>
           </p>
         </div>
       </div>
       <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[450px] mb-20 rounded-lg">
         <div className="mt-10">
           <p className="font-bold text-5xl font-overpass text-center">
-            <span className="text-emerald-500"> Experiencias </span>
+            <span className="text-emerald-600"> Experiencias </span>
             de nuestra escuela
           </p>
           <div className="grid gird-row md:grid-cols-3 text-center mt-10 justify-center">
@@ -58,14 +71,15 @@ export const SimuladorContent = () => {
               />
             </div>
           </div>
-          <Link
-            to="/soluciones"
-            className="md:flex  justify-end xl:mt-6 font-overpass font-bold focus:cursor-pointer "
-          >
-            <p className="text-emerald-500 hover:underline text-center">
+          <div className="md:flex justify-end ">
+            {" "}
+            <button
+              onClick={() => scrollToExperienciasContent()}
+              className="cursor-pointer p-0 xl:mt-6 ml-10  py-1 px-3 mb-3 rounded bg-emerald-500 transition-all duration-400 font-bold text-white font-custom"
+            >
               Explora todos nuestros cursos
-            </p>
-          </Link>
+            </button>
+          </div>
         </div>
         <div className="flex items-center ">
           <video className="w-full h-full rounded-lg" autoPlay loop muted>

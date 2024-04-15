@@ -22,9 +22,9 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Desarrolla las <span className="text-emerald-500">destrezas </span>{" "}
+            Desarrolla las <span className="text-emerald-600">destrezas </span>{" "}
             de tus empleados para liderar en seguridad laboral utilizando la{" "}
-            <span className="text-emerald-500">era digital.</span>
+            <span className="text-emerald-600">era digital.</span>
           </>
         ),
         subTitle: (
@@ -43,9 +43,9 @@ export const Carousel = () => {
         title: (
           <>
             Sé parte de cómo los métodos más{" "}
-            <span className="text-emerald-500">avanzados y sostenibles </span>
+            <span className="text-emerald-600">avanzados y sostenibles </span>
             en prevención de riesgos pueden impulsar el{" "}
-            <span className="text-emerald-500">éxito</span> de tu empresa.
+            <span className="text-emerald-600">éxito</span> de tu empresa.
           </>
         ),
         subTitle: (
@@ -62,10 +62,10 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Somos una <span className="text-emerald-400">OTEC</span> chilena
-            acreditada por <span className="text-emerald-400">Sence</span> y
+            Somos una <span className="text-emerald-600">OTEC</span> chilena
+            acreditada por <span className="text-emerald-600">Sence</span> y
             certificada según la norma NCH°2728 para garantizar una{" "}
-            <span className="text-emerald-400">calidad de excelencia.</span>
+            <span className="text-emerald-600">calidad de excelencia.</span>
           </>
         ),
         subTitle: (
@@ -100,7 +100,7 @@ export const Carousel = () => {
 
   return (
     <>
-      <section className="w-auto mt-4 ml-3 group ">
+      <section className="w-auto mt-4 md:ml-3 group ">
         <div>
           <div
             rel="preload"
@@ -113,7 +113,7 @@ export const Carousel = () => {
           {/* flecha izquierda */}
           <div
             onClick={prevSlide}
-            className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
+            className="hidden group-hover:block absolute z-40 sm:top-[40%] top-[50%]  -translate-x-0 translate-y-[-50%] md:left-14 left-5 text-2xl rounded-full p-2 bg-white cursor-pointer"
           >
             <ArrowLeft className="w-5 h-5 text-black" />
           </div>
@@ -121,21 +121,21 @@ export const Carousel = () => {
           {/* flecha derecha */}
           <div
             onClick={nextSlide}
-            className="hidden group-hover:block absolute z-40 top-[40%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl md:rounded-full p-2 bg-white cursor-pointer"
+            className="hidden group-hover:block absolute z-40 sm:top-[40%] top-[50%]  -translate-x-0 translate-y-[-50%] md:right-14 right-5 text-2xl rounded-full p-2 bg-white cursor-pointer"
           >
             <ArrowRight className="w-4 h-5 text-black" />
           </div>
         </div>
 
-        <div className="absolute inset-0  h-[768px] mt-28  md:right-[55%]  xl:pt-5 lg:mx-10  md:rounded-l-2xl bg-center bg-cover">
-          <div className="mt-16 md:ml-16 ml-7  ">
+        <div className="absolute inset-0  h-[540px] mt-28 bg-slate-600/60 md:right-[55%]  xl:pt-5 lg:mx-[52px]  md:rounded-l-2xl bg-center bg-cover">
+          <div className="mt-16 md:ml-14 ml-1  ">
             <p className="font-bold text-left  text-white  font-overpass text-2xl 2xl:w-2/4 md:text-xl xl:text-2xl">
               {slideImages[currentIndex].content.title}
             </p>
             <p className=" mt-5 font-bold text-left text-white  text-base font-overpass 2xl:w-3/4  max-md:text-base">
               {slideImages[currentIndex].content.subTitle}
             </p>
-            <div className=" gap-2 mt-5 md:mt-10">
+            <div className=" gap-2 mt-32 sm:mt-10">
               <button
                 onClick={() => scrollToContactoContent()}
                 className="py-5 mb-3 px-5 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline text-lg font-bold text-white"

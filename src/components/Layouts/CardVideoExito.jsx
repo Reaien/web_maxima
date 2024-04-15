@@ -41,7 +41,7 @@ const CardVideoExito = ({ nombre, cargo, empresa, frase, foto, video }) => {
           }
         }}
       >
-        <video className="rounded-lg" ref={videoRef} controls>
+        <video className="rounded-lg w-[720px]" ref={videoRef} controls>
           <source src={video} type="video/mp4" />
         </video>
         {

@@ -13,8 +13,8 @@ const Video_Cards = () => {
             </p>
             <p className="italic text-3xl font-overpass mt-3">
               Sé parte de esta
-              <span className="text-emerald-500"> gran historia</span> en la que
-              juntos somos protagonistas
+              <span className=""> gran historia</span> en la que juntos somos
+              protagonistas
             </p>
           </div>
 

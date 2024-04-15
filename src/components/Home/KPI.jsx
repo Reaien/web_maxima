@@ -8,7 +8,7 @@ export const KPI = () => {
           <span className="font-extrabold font-overpass text-2xl xl:text-4xl">
             180+{" "}
           </span>
-          <span className="text-emerald-500 font-overpass text-2xl  md:text-3xl  to-white">
+          <span className="text-emerald-600 font-overpass text-2xl  md:text-3xl  to-white">
             Empleados certificados
           </span>
           <span className="font-overpass text-2xl md:text-4xl text-transparent md:text-gray-500 ml-16">
@@ -19,7 +19,7 @@ export const KPI = () => {
           <span className="font-extrabold font-overpass text-2xl xl:text-4xl">
             30+{" "}
           </span>
-          <span className="text-emerald-500 font-overpass text-2xl md:text-3xl  to-white">
+          <span className="text-emerald-600 font-overpass text-2xl md:text-3xl  to-white">
             Empresas satisfechas
           </span>
           <span className="font-overpass md:text-4xl text-transparent md:text-gray-500 ml-14">
@@ -30,7 +30,7 @@ export const KPI = () => {
           <span className="font-extrabold font-overpass text-2xl md:text-4xl xl:text-4xl">
             73%{" "}
           </span>
-          <span className="text-emerald-500 font-overpass text-2xl md:text-3xl to-white">
+          <span className="text-emerald-600 font-overpass text-2xl md:text-3xl to-white">
             Mayor prevención en accidentes
           </span>
         </div>

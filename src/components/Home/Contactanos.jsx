@@ -49,8 +49,8 @@ export const Contactanos = () => {
           <div>
             <p className="text-base max-md:text-center font-overpass ml-1 mb-5 md:text-xl">
               Sé parte de nuestra{" "}
-              <span className="text-emerald-500">experiencia</span> de enseñanza
-              e <span className="text-emerald-500">innovación</span>
+              <span className="text-emerald-600">experiencia</span> de enseñanza
+              e <span className="text-emerald-600">innovación</span>
             </p>
             <p className="max-md:text-center text-5xl md:text-7xl font-overpass text-left">
               Contáctanos
@@ -65,21 +65,21 @@ export const Contactanos = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedinIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+              <LinkedinIcon className="hover:text-emerald-600 duration-500 cursor-pointer" />
             </a>
             <a
               href="https://www.instagram.com/maxima.formacion/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <InstagramIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+              <InstagramIcon className="hover:text-emerald-600 duration-500 cursor-pointer" />
             </a>
             <a
               href="https://www.tiktok.com/@maximaformacion"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TiktokIcon className="hover:text-emerald-500 duration-500 cursor-pointer" />
+              <TiktokIcon className="hover:text-emerald-600 duration-500 cursor-pointer" />
             </a>
           </div>
         </div>

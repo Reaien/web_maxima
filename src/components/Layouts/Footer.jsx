@@ -49,27 +49,27 @@ export const Footer = () => {
       <div className="text-white text-center md:text-left">
         <p className="text-3xl font-bold font-overpass">Páginas</p>
         <ul className="md:text-left">
-          <Link to="/" className="hover:text-emerald-500 cursor-pointer">
+          <Link to="/" className="hover:text-emerald-600 cursor-pointer">
             <p>Inicio</p>
           </Link>
           <Link
             to="/soluciones"
-            className="hover:text-emerald-500 cursor-pointer"
+            className="hover:text-emerald-600 cursor-pointer"
           >
             <p>Soluciones</p>
           </Link>
-          <Link to="/maxima" className="hover:text-emerald-500 cursor-pointer">
+          <Link to="/maxima" className="hover:text-emerald-600 cursor-pointer">
             <p>¿Por qué Máxima?</p>
           </Link>
           <Link
             to="/casos_exito"
-            className="hover:text-emerald-500 cursor-pointer"
+            className="hover:text-emerald-600 cursor-pointer"
           >
             <p>Casos de exito</p>
           </Link>
           <li
             onClick={() => scrollToBlogContent()}
-            className="hover:text-emerald-500 cursor-pointer"
+            className="hover:text-emerald-600 cursor-pointer"
           >
             <p>Blog</p>
           </li>

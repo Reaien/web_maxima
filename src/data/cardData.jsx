@@ -4,6 +4,8 @@ import FotoEstefany from "../assets/clientes_casos_exito/foto_cliente_2.webp";
 
 import FotoUnknown from "../assets/clientes_casos_exito/foto_cliente_unknown.webp";
 import caso_cliente_1 from "../assets/video/caso_cliente.mp4";
+import caso_cliente_2 from "../assets/video/caso_cliente_2.mp4";
+import caso_cliente_3 from "../assets/video/caso_cliente_3.mp4";
 
 export const cardData = [
   {
@@ -24,7 +26,7 @@ export const cardData = [
     frase:
       "Destaco la capacidad de respuesta de Máxima la preocupación y profesionalismo.",
     foto: FotoEstefany,
-    video: caso_cliente_1,
+    video: caso_cliente_2,
   },
   {
     id: 3,
@@ -34,6 +36,6 @@ export const cardData = [
     frase:
       "La simplicidad que entrega Máxima para trabajar en conjunto y llevar a cabo las capacitaciones que requerimos.",
     foto: FotoUnknown,
-    video: caso_cliente_1,
+    video: caso_cliente_3,
   },
 ];
