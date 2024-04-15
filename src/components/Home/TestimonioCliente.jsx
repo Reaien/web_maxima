@@ -29,17 +29,17 @@ export const TestimonioCliente = () => {
           </p>
           <div className="mt-5">
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-10" />
               Mejora las competencias necesarias para impulsar la seguridad
               laboral y acelerar la transformación en tu empresa.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-10" />
               Aprende y aplica rápidamente las habilidades en prevención de
               riesgos a través de proyectos prácticos y aprendizaje inmersivo.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-500 mr-4 text-4xl w-10" />
               Utiliza nuestra metodología de vanguardia en enseñanza y
               simulación para impulsar las habilidades de tus empleados.
             </p>

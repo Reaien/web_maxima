@@ -15,7 +15,7 @@ export const cardBlogData = [
     id: 2,
     titulo: "Curso de Salud Ocupacional",
     parrafo:
-      "En Máxima Formación, nos apasiona ayudar a las organizaciones a desarrollar el potencial de su equipo humano a través de capacitación y formación a medida.",
+      "En Máxima, desarrollamos e implementamos programas de formación y capacitación HSEQ personalizadas a través de metodologías agiles. ¡Estamos agradecidos por la confianza que depositaron en nosotros y por la oportunidad de contribuir al éxito de sus instituciones!",
     foto: FotoBlog2,
     fecha: "02/07/2023",
   },
@@ -23,7 +23,7 @@ export const cardBlogData = [
     id: 3,
     titulo: "Curso de mallas eléctricas",
     parrafo:
-      "En Máxima Formación, nos apasiona ayudar a las organizaciones a desarrollar el potencial de su equipo humano a través de capacitación y formación a medida.",
+      "Con la ayuda de Máxima Formación. Gracias a la capacitación personalizada en prevención de riesgos, se ha logrado reducir incidentes y mejorar la productividad, así se celebró en el curso de formación de prevención de riesgos",
     foto: FotoBlog3,
     fecha: "11/06/2023",
   },

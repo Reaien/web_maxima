@@ -16,23 +16,23 @@ export const TestimonioEmpleado = () => {
             Experiencia de los{" "}
             <span className="text-emerald-500">empleados</span>
           </p>
-          <p className=" font-overpass md:text-center mt-5">
+          <p className=" font-overpass text-left md:text-center mt-5">
             Explora las habilidad que tus empleados obtienen con el programa de
             Máxima Formación
           </p>
           <div className="mt-5">
-            <p className="font-overpass  mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+            <p className="font-overpass text-left mt-2 flex items-center">
+              <Check className="text-emerald-500 mr-3 text-3xl w-6" />
               Potencia tus habilidades en prevención de riesgos para contribuir
               a la seguridad y el bienestar en tu entorno laboral.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-500 mr-3 text-4xl w-6" />
               Desarrolla tu liderazgo en seguridad para ser un ejemplo y motivar
               a tus compañeros en la adopción de prácticas seguras.
             </p>
             <p className="font-overpass text-left mt-2 flex items-center">
-              <Check className="text-emerald-500 mr-4 text-4xl w-5" />
+              <Check className="text-emerald-500 mr-3 text-4xl w-6" />
               Aprende de manera efectiva con proyectos y experiencias inmersivas
               que te permitan aplicar lo aprendido en tu día laboral.
             </p>
