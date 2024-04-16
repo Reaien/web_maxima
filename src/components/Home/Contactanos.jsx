@@ -119,7 +119,7 @@ export const Contactanos = () => {
               </div>
               <div>
                 <label className="block text-sm font-bold text-gray-900">
-                  Mensaje
+                  ¿Como podemos ayudarte?
                 </label>
                 <textarea
                   className="h-44 bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded focus:ring-emerald-500 focus:border-emerald-500 duration-500 block w-full p-2.5 outline-none"
