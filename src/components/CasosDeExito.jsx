@@ -6,6 +6,7 @@ import casos_exito_cover from "../assets/images/casos_exito_cover.webp";
 
 import React from "react";
 import Video_Cards from "./Casos_Exito/Video_Cards.jsx";
+import { SliderComentarios } from "./Casos_Exito/SliderComentarios.jsx";
 
 const CasosDeExito = () => {
   return (
@@ -14,6 +15,7 @@ const CasosDeExito = () => {
       <ToggleMenuXL />
       <ImageBar title="Casos de éxito" imageURL={casos_exito_cover} />
       <Video_Cards />
+      <SliderComentarios />
       <Footer />
     </React.Fragment>
   );
