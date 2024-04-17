@@ -8,7 +8,7 @@ export const BlogContent = () => {
       <section>
         <div className="grid grid-rows-1 items-center justify-center text-center">
           <p className="text-6xl  xl:pl-6 font-bold font-overpass">
-            <span className="text-emerald-500 ">Blog</span> <br />
+            <span className="text-emerald-600 ">Blog</span> <br />
             Últimas novedades
           </p>
         </div>

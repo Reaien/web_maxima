@@ -86,8 +86,8 @@ export const EmpresasContainer = () => {
   }, [currentIndex]); // Esto se ejecutará cada vez que cambie el currentIndex
   return (
     <>
-      <section className="h-[400px] max-w-auto w-auto bg-white mt-20 mb-20 grid grid-rows-1 md:grid-cols-2 items-center">
-        <div className="md:mx-auto font-overpass text-4xl md:text-6xl md:text-start text-center md:w-1/2 px-5 font-bold md:mr-20">
+      <section className="h-[400px] max-w-auto shadow-lg w-auto bg-slate-400/5 mt-20 mb-20 grid grid-rows-1 md:grid-cols-2 items-center">
+        <div className="md:mx-auto font-overpass text-2xl xl:text-3xl 2xl:text-5xl l md:text-start text-center md:w-1/2 px-5 font-bold md:mr-20">
           Empresas líderes que
           <span className="text-emerald-600"> maximizan </span>
           su potencial con nosotros.
@@ -95,6 +95,7 @@ export const EmpresasContainer = () => {
         <div className="mx-auto w-auto h-auto mt-4 flex md:ml-36 ">
           <div
             style={{
+              backgroundColor: "white",
               backgroundImage: `url(${slideImages[currentIndex].imgUrl}) `,
               backgroundSize: "90%",
               backgroundPosition: "center",

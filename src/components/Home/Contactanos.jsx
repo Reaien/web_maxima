@@ -139,7 +139,7 @@ export const Contactanos = () => {
                 <button
                   type="submit"
                   value="Envíar contacto"
-                  className="mt-4 rounded bg-gradient-to-b from-emerald-500  to-emerald-600  py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline "
+                  className="mt-4 rounded bg-emerald-500  py-2 px-3 font-bold text-white font-custom cursor-pointer hover:underline "
                   //boton disabled hasta que se pase el captcha//
                   disabled={!capValue}
                 >

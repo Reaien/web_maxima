@@ -59,16 +59,17 @@ export const SolucionesContent = () => {
     <>
       {/* container armado de toggleMenuDesktop */}
       <div className="flex">
-        <div className="flex items-center flex-wrap md:w-3/4 animate-fade animate-duration-[2000ms]">
+        <div className="flex items-center  flex-wrap md:w-3/4 animate-fade animate-duration-[2000ms]">
           <button
             onClick={() => scrollToPricingContent()}
             onMouseEnter={() => handleMouseEnter("imagenSuscripcion")}
             onMouseLeave={handleMouseLeave}
             className="mb-3 hover:text-emerald-600 hover:underline"
-            href="#"
           >
             <div>
-              <p className="mt-10 font-bold font-overpass">Suscripción</p>
+              <p className="mt-10 font-bold text-left font-overpass">
+                Suscripción
+              </p>
             </div>
             <div className="text-left">
               <p className="text-sm">
@@ -83,10 +84,9 @@ export const SolucionesContent = () => {
             onMouseEnter={() => handleMouseEnter("imagenCurso")}
             onMouseLeave={handleMouseLeave}
             className="mb-3 hover:text-emerald-600 hover:underline"
-            href="#"
           >
             <div>
-              <p className="mt-10 font-bold font-overpass ">
+              <p className="mt-10 text-left font-bold font-overpass ">
                 Programa de formación de alto impacto
               </p>
             </div>
@@ -102,10 +102,9 @@ export const SolucionesContent = () => {
             onMouseEnter={() => handleMouseEnter("imagenVR")}
             onMouseLeave={handleMouseLeave}
             className="mb-3 hover:text-emerald-600 hover:underline"
-            href="#"
           >
             <div>
-              <p className="mt-10 font-bold font-overpass ">
+              <p className="mt-10 text-left font-bold font-overpass ">
                 Simulador de escuela de riesgos
               </p>
             </div>

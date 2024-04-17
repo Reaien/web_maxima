@@ -33,7 +33,7 @@ export const SimuladorContent = () => {
           </p>
         </div>
       </div>
-      <section className="md:bg-gradient-to-r md:from-white md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[450px] mb-20 rounded-lg">
+      <section className="md:bg-gradient-to-r md:from-slate-700/10 md:via-zinc-50 md:to-transparent grid grid-rows-1 md:grid-cols-2 mt-12   md:h-[450px] mb-20 rounded-lg">
         <div className="mt-10">
           <p className="font-bold text-5xl font-overpass text-center">
             <span className="text-emerald-600"> Experiencias </span>

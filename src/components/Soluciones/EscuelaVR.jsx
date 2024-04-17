@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Oculus from "../../assets/images/oculus.webp";
-
 import { useInView } from "react-intersection-observer";
 
 export const EscuelaVR = () => {
+  //Boton para volver a las cardspricing
+  const scrollToPricingCard = () => {
+    const contactoContent = document.getElementById("cardPricing");
+    contactoContent.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+  };
+
   //creamos hook para observar
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
@@ -38,12 +47,22 @@ export const EscuelaVR = () => {
               <span className="text-emerald-600">Máxima Formación VR</span>
             </p>
           </div>
-          <div className="pt-28 animate-bounce animate-infinite animate-duration-[2000ms]">
-            <img
-              className="w-80 mx-auto shadow-lg border rounded-full"
-              src={Oculus}
-              alt="Foto Oculus"
-            />
+          <div className="flex flex-col ">
+            <div className="pt-28 animate-bounce animate-infinite animate-duration-[2000ms]">
+              <img
+                className="w-80 mx-auto shadow-lg border rounded-full"
+                src={Oculus}
+                alt="Foto Oculus"
+              />
+            </div>
+            <div className="flex md:justify-end items-center align-middle justify-center">
+              <button
+                onClick={() => scrollToPricingCard()}
+                className="cursor-pointer p-0 xl:mt-6  py-1 px-7 mb-3 rounded bg-emerald-500 transition-all duration-400 font-bold text-white font-custom"
+              >
+                Explora todos nuestros cursos
+              </button>
+            </div>
           </div>
         </section>
       </section>

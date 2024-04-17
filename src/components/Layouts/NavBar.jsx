@@ -80,8 +80,12 @@ export const NavBar = () => {
     <>
       <header className="bg-white shadow-md h-24 ">
         <div className=" flex items-center justify-between max-w-screen-2xl mx-auto ">
-          <Link to="/" className="lg:pl-16 xl:pl-40 -mt-3">
-            <img className="w-48" src={maximaLogoFull} alt="logo" />
+          <Link to="/" className="lg:pl-16 xl:pl-52   md:-mt-3">
+            <img
+              className="w-44 -md:mt-5 xl:w-48"
+              src={maximaLogoFull}
+              alt="logo"
+            />
           </Link>
           <div className="max-lg:hidden flex items-center space-x-4 px-3">
             <button
@@ -126,12 +130,20 @@ export const NavBar = () => {
               Blog
             </button>
           </div>
-          <div className="pt-2 ml-10 max-lg:hidden">
+          <div className="pt-2 max-lg:hidden">
             <button
               onClick={() => scrollToContactoContent()}
-              className="py-1 ml-2 px-3 mb-3 rounded bg-emerald-500 transition-all duration-400 hover:underline font-bold text-white font-custom"
+              className="py-1  text-xs xl:text-base px-0 xl:px-3  rounded bg-emerald-500 transition-all duration-400 hover:underline font-bold text-white font-custom"
             >
               Comunícate con nosotros
+            </button>
+          </div>
+          <div className="pt-2 max-lg:hidden">
+            <button
+              onClick={() => scrollToContactoContent()}
+              className="py-1  text-xs xl:text-base px-0 xl:px-3 rounded bg-blue-500 transition-all duration-400 hover:underline font-bold text-white font-custom"
+            >
+              Accede al aula virtual
             </button>
           </div>
 
