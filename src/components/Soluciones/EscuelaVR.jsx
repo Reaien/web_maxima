@@ -31,7 +31,7 @@ export const EscuelaVR = () => {
       <section>
         <section
           ref={ref}
-          className={`grid grid-rows-1 xl:grid-cols-2 mx-auto  xl:px-40 px-10 mt-20 bg-white mb-20 xl:pb-10 shadow-lg justify-center items-center xl:h-[500px] ${isVisible ? "visible animate-fade-right animate-duration-1500" : "invisible"}`}
+          className={`grid grid-rows-1 xl:grid-cols-2 mx-auto  xl:px-40 px-10 mt-20 bg-white mb-20 xl:pb-10 shadow-lg justify-center items-center xl:h-[600px] ${isVisible ? "visible animate-fade-right animate-duration-1500" : "invisible"}`}
         >
           <div className=" md:w-[600px] ">
             <h4 className="md:text-5xl text-5xl font-overpass md:text-left mt-6 ">

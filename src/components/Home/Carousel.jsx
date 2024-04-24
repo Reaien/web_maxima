@@ -22,9 +22,11 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Desarrolla las <span className="text-emerald-600">destrezas </span>{" "}
-            de tus empleados para liderar en seguridad laboral utilizando la{" "}
-            <span className="text-emerald-600">era digital.</span>
+            Diseñamos <span className="text-emerald-600">experiencias </span>{" "}
+            únicas e innovadoras para la{" "}
+            <span className="text-emerald-600">seguridad y salud</span> de tu
+            equipo de trabajo{" "}
+            <span className="text-emerald-600">seguridad y salud</span>
           </>
         ),
         subTitle: (
@@ -42,10 +44,9 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Sé parte de cómo los métodos más{" "}
-            <span className="text-emerald-600">avanzados y sostenibles </span>
-            en prevención de riesgos pueden impulsar el{" "}
-            <span className="text-emerald-600">éxito</span> de tu empresa.
+            Capaciate en HSEQ a través de{" "}
+            <span className="text-emerald-600">metodologías ágiles </span>y
+            gamificación como lo hacen grandes empresas y miles de personas{" "}
           </>
         ),
         subTitle: (
@@ -62,10 +63,8 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Somos una <span className="text-emerald-600">OTEC</span> chilena
-            acreditada por <span className="text-emerald-600">Sence</span> y
-            certificada según la norma NCH°2728 para garantizar una{" "}
-            <span className="text-emerald-600">calidad de excelencia.</span>
+            Impulsamos la <span className="text-emerald-600">cultura</span>{" "}
+            preventiva de tu empresa en 360°
           </>
         ),
         subTitle: (
@@ -127,7 +126,7 @@ export const Carousel = () => {
           </div>
         </div>
 
-        <div className="absolute inset-0  h-[540px] mt-28 bg-slate-600/60 md:right-[55%]  xl:pt-5 lg:mx-[52px]  md:rounded-l-2xl bg-center bg-cover">
+        <div className="absolute inset-0  h-[540px] mt-28 bg-neutral-800/75 md:right-[55%]  xl:pt-5 lg:mx-[52px]  md:rounded-l-2xl bg-center bg-cover">
           <div className="mt-16 md:ml-14 ml-1  ">
             <p className="font-bold text-left  text-white  font-overpass text-2xl 2xl:w-2/4 md:text-xl xl:text-2xl">
               {slideImages[currentIndex].content.title}

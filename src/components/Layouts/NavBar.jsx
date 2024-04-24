@@ -203,9 +203,17 @@ export const NavBar = () => {
         <div className="bg-white pt-4">
           <button
             onClick={() => scrollToContactoContent()}
-            className="py-1 ml-2 px-3 mb-3 rounded bg-gradient-to-b from-emerald-500  to-emerald-600 transition-all duration-400 hover:underline  font-bold text-white "
+            className="py-1 ml-2 px-3 mb-3 rounded bg-emerald-600 transition-all duration-400 hover:underline  font-bold text-white "
           >
             Comunícate con nosotros
+          </button>
+        </div>
+        <div className="bg-white pt-4">
+          <button
+            onClick={() => scrollToContactoContent()}
+            className="py-1 ml-2 px-3 mb-3 rounded bg-blue-500 transition-all duration-400 hover:underline  font-bold text-white "
+          >
+            Accede al aula virtual
           </button>
         </div>
         {contentMovil}
