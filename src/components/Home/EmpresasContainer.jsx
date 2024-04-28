@@ -61,9 +61,11 @@ export const EmpresasContainer = () => {
     {
       imgUrl: logo_empresa_16,
     },
+
     {
       imgUrl: logo_empresa_17,
     },
+
     {
       imgUrl: logo_empresa_18,
     },

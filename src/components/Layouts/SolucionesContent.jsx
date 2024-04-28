@@ -67,8 +67,8 @@ export const SolucionesContent = () => {
             className="mb-3 hover:text-emerald-600 hover:underline"
           >
             <div>
-              <p className="mt-10 font-bold text-left font-overpass">
-                Suscripción
+              <p className="mt-10 font-bold text-left font-overpass uppercase">
+                Máxima Formación eTraining
               </p>
             </div>
             <div className="text-left">
@@ -86,8 +86,8 @@ export const SolucionesContent = () => {
             className="mb-3 hover:text-emerald-600 hover:underline"
           >
             <div>
-              <p className="mt-10 text-left font-bold font-overpass ">
-                Programa de formación de alto impacto
+              <p className="mt-10 text-left font-bold font-overpass uppercase">
+                Máxima formación 360°
               </p>
             </div>
             <div className="text-left">
@@ -104,8 +104,8 @@ export const SolucionesContent = () => {
             className="mb-3 hover:text-emerald-600 hover:underline"
           >
             <div>
-              <p className="mt-10 text-left font-bold font-overpass ">
-                Simulador de escuela de riesgos
+              <p className="mt-10 text-left font-bold font-overpass uppercase">
+                Escuela de riesgos críticos y VR
               </p>
             </div>
             <div className="text-left">

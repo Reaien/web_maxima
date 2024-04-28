@@ -6,6 +6,7 @@ import { ImageBar } from "../components/Layouts/ImageBar.jsx";
 import { CardPricing } from "../components/Soluciones/CardPricing.jsx";
 import { EscuelaVR } from "../components/Soluciones/EscuelaVR.jsx";
 import { Experiencias } from "../components/Soluciones/Experiencias.jsx";
+import { EscuelaRiesgosCriticos } from "../components/Soluciones/EscuelaRiesgosCriticos.jsx";
 
 import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.webp";
 
@@ -15,34 +16,65 @@ const Soluciones = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
+      <EscuelaRiesgosCriticos />
+      <section className="flex justify-items-center text-center md:px-20 xl:px-80 ">
+        <p className="text-xl font-overpass mt-20 mb-10">
+          No esperes más para llevar la
+          <span className="text-emerald-600 "> formación </span>de tu empresa al
+          siguiente nivel. Suscríbete a Máxima Formación eTraining y aprovecha
+          nuestra plataforma de cursos HSEQ para capacitar a tu equipo de
+          trabajo de manera eficiente y efectiva. Elige el plan que mejor se
+          adapte a tus necesidades y comienza tu viaje hacia un lugar de trabajo
+          más seguro y productivo hoy mismo.
+        </p>
+      </section>
       <div
-        className="grid grid-rows-1 md:grid-cols-2 justify-end "
+        className="grid grid-rows-1 xl:grid-cols-3 mx-auto "
         id="cardPricing"
       >
-        <div className="xl:ml-64 animate-fade-right animate-duration-[3000ms]">
+        <div className=" animate-fade-left animate-duration-[3000ms] ">
           <CardPricing
-            colorListon="#059669"
-            tituloPlan="Máxima"
-            subTituloPlan="Plan para empresas enfocado en la seguridad y prevención de riesgos
-            experiencia y acceso a material de manera online."
-            textoBoton="Lo quiero"
-            lista1="Curso de Prevención en trabajos con altura"
-            lista2="Curso de Manejo y uso de extintores"
-            lista3="Curso de Seguridad en espacios cerrados"
-            lista4="Y mucho más"
+            colorListon="#C0C0C0"
+            tituloPlan="PLATA"
+            textoBoton="Contáctanos"
+            cantidadParticipantes="Cantidad máxima de participantes 30"
+            precioOld="$399.000/mes"
+            precioNuevo="$199.000/mes Contratando plan anual"
+            lista1="Certificados digitales"
             externalLink="https://api.whatsapp.com/send?phone=56983784773&text=Hola!%0AQuiero%20solicitar%20el%20plan%20Maxima"
           />
         </div>
-        <div className="xl:mr-64 animate-fade-left animate-duration-[3000ms]">
+        <div className="animate-fade-left animate-duration-[3000ms] ">
           <CardPricing
             colorListon="#f4cc3c"
-            tituloPlan="Versátil"
-            subTituloPlan="Escoge el plan que mas se adecúe a tus necesidades laborales y seguridad de nuestro catálogo de cursos agendando en calendly una reunión especializada."
+            tituloPlan="ORO"
+            textoBoton="Contáctanos"
+            cantidadParticipantes="Cantidad máxima de participantes 40"
+            precioOld="$599.000/mes"
+            precioNuevo="$299.000/mes Contratando plan anual"
+            lista1="Certificados digitales"
+            lista2="Acceso a soporte exclusivo"
+            lista3="Riesgos Críticos/VR 15% descuento"
+            lista4="Máxima Formación 360° 10% descuento"
+            lista5="Máxima Formación FLEX 10% descuento"
+            externalLink="https://api.whatsapp.com/send?phone=56983784773&text=Hola!%0AQuiero%20solicitar%20el%20plan%20Maxima"
+          />
+        </div>
+        <div className=" animate-fade-left animate-duration-[3000ms]">
+          <CardPricing
+            colorListon="#9AC5DB"
+            tituloPlan="DIAMANTE"
             textoBoton="Agenda una reunión"
-            lista1="Gran catálogo de cursos"
-            lista2="La flexibilidad de elegir"
-            lista3="Cotización especializada"
-            lista4="Asesoría directa con nuestros ejecutivos"
+            cantidadParticipantes="Cantidad máxima de participantes 50"
+            precioOld="$3.999.000/mes"
+            precioNuevo="$1.999.000/mes Contratando plan anual"
+            lista1="Certificados digitales y físicos"
+            lista2="Acceso a soporte exclusivo"
+            lista3="Riesgos Críticos/VR 30% descuento"
+            lista4="Máxima Formación 360° 25% descuento"
+            lista5="Máxima Formación FLEX 20% descuento"
+            lista6="Inducción corporativa e-learning a la medida del cliente"
+            lista7="Acceso online y offline en App"
             externalLink="https://calendly.com/maximaformacion/30min"
           />
         </div>
