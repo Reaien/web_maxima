@@ -1,8 +1,18 @@
-# React + Vite
+##Documentación web Máxima Formación
+*Creado por: Iván Andrés Duarte Herrera*
+![image](https://github.com/Reaien/web_maxima/assets/84549625/92cb2bdb-4835-4385-a1a0-7b90f24fd6e0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###Índice
+- Introducción
+- Objetivos
+- Diseño
+- Navegación
+- Contenido
+- Formularios
+- CTA (Call to Action)
+- SEO (Search Engine Optimization)
+- Analítica
+- Mantenimiento
+- Retrospectiva
+- Conclusión
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
