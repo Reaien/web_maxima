@@ -122,7 +122,7 @@ export const Experiencias = () => {
             onClick={() => scrollToPricingCard()}
             className="z-50 cursor-pointer p-0 py-1 px-7 rounded bg-emerald-500 transition-all duration-400 font-bold text-white font-custom"
           >
-            Explora todos nuestros cursos
+            Adquiere nuestros cursos
           </button>
         </div>
       </section>

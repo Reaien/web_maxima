@@ -60,7 +60,7 @@ export const EscuelaVR = () => {
                 onClick={() => scrollToPricingCard()}
                 className="cursor-pointer p-0 xl:mt-6  py-1 px-7 mb-3 rounded bg-emerald-500 transition-all duration-400 font-bold text-white font-custom"
               >
-                Explora todos nuestros cursos
+                Adquiere nuestros cursos
               </button>
             </div>
           </div>

@@ -21,12 +21,12 @@ export const ImageBar = ({ title, imageURL }) => {
           />
         </div>
       </section>
-      <section className="grid grid-cols-1">
+      <section className="grid md:grid-cols-1">
         <p className="font-overpass md:text-2xl xl:text-5xl mx-auto font-bold mt-20">
           ¡ Bienvenido a Máxima Formación{" "}
           <span className="text-emerald-600">eTraining !</span>
         </p>
-        <p className="italic text-slate-600 px-80 text-center">
+        <p className="italic text-slate-600 md:px-80 text-center">
           ¿Estás en busqueda una solución integral para la Formación en materia
           de Salud, Seguridad, Medio Ambiente y Calidad (HSEQ) para tu empresa?
           Maxima Formación eTraining. Tu solución integral en formación HSEQ,

@@ -9,6 +9,7 @@ import { Experiencias } from "../components/Soluciones/Experiencias.jsx";
 import { EscuelaRiesgosCriticos } from "../components/Soluciones/EscuelaRiesgosCriticos.jsx";
 
 import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.webp";
+import { NuestrosProgramas } from "./Soluciones/NuestrosProgramas.jsx";
 
 const Soluciones = () => {
   return (
@@ -17,6 +18,14 @@ const Soluciones = () => {
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
       <EscuelaRiesgosCriticos />
+      <NuestrosProgramas />
+      <div id="escuelaVR">
+        <EscuelaVR />
+      </div>
+
+      <div id="experiencias">
+        <Experiencias />
+      </div>
       <section className="flex justify-items-center text-center md:px-20 xl:px-80 ">
         <p className="text-xl font-overpass mt-20 mb-10">
           No esperes más para llevar la
@@ -79,13 +88,7 @@ const Soluciones = () => {
           />
         </div>
       </div>
-      <div id="escuelaVR">
-        <EscuelaVR />
-      </div>
 
-      <div id="experiencias">
-        <Experiencias />
-      </div>
       <Footer />
     </React.Fragment>
   );

@@ -1,5 +1,9 @@
 import React from "react";
-import { BotonEscuelaRiesgos } from "../Layouts/BotonEscuelaRiesgos";
+import { BotonEscuelaRiesgos_01 } from "./buttons/BotonEscuelaRiesgos_01";
+import { BotonEscuelaRiesgos_02 } from "./buttons/BotonEscuelaRiesgos_02";
+import { BotonEscuelaRiesgos_03 } from "./buttons/BotonEscuelaRiesgos_03";
+import { BotonEscuelaRiesgos_04 } from "./buttons/BotonEscuelaRiesgos_04";
+import { BotonEscuelaRiesgos_05 } from "./buttons/BotonEscuelaRiesgos_05";
 
 export const EscuelaRiesgosCriticos = () => {
   return (
@@ -23,11 +27,15 @@ export const EscuelaRiesgosCriticos = () => {
           </p>
         </div>
         <div>
-          <p className="font-overpass text-lg italic ">
+          <p className="font-overpass text-lg italic mt-5">
             ¿Por qué elegir la escuela de riesgos críticos?
           </p>
-          <div>
-            <BotonEscuelaRiesgos />
+          <div className="grid md:grid-rows-2 md:grid-cols-2 gap-5 mt-5 mb-5">
+            <BotonEscuelaRiesgos_01 />
+            <BotonEscuelaRiesgos_02 />
+            <BotonEscuelaRiesgos_03 />
+            <BotonEscuelaRiesgos_04 />
+            <BotonEscuelaRiesgos_05 />
           </div>
         </div>
       </section>
