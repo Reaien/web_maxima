@@ -1,5 +1,5 @@
 import React from "react";
-import foto_gerente from "../../assets/images/foto_gerente.jpeg";
+import foto_gerente from "../../assets/images/foto_gerente.webp";
 
 export const ManagerProposal = () => {
   return (
@@ -9,20 +9,23 @@ export const ManagerProposal = () => {
           Detrás de la <span className="text-emerald-600">seguridad</span> y la
           experiencia única de aprendizaje{" "}
         </h4>
-        <p className="md:text-left font-overpass mt-12">
-          Como gerente de Máxima Formación, nos enorgullece compartir nuestro
-          compromiso detrás de la seguridad y la experiencia única de
-          aprendizaje que ofrecemos. Nuestra misión es proporcionar a empresas y
-          trabajadores las herramientas necesarias para crear entornos laborales
-          seguros y saludables. A través de nuestra dedicación a la innovación
-          en la prevención de riesgos y la integración de tecnologías avanzadas,
-          como la realidad virtual, buscamos no solo capacitar a los empleados,
-          sino también inspirarlos y empoderarlos. <br />
-          <br />
-          Es por eso que nos esforzamos por brindar una experiencia de
-          aprendizaje única que no solo educa, sino que también transforma,
-          contribuyendo así a un futuro laboral más seguro y prometedor para
-          todos.
+        <p className="md:text-left font-overpass mt-12 mb-10">
+          ¡Bienvenido/a a Maxima Formación, donde transformamos la capacitación
+          en una experiencia emocionante y efectiva! Somos pioneros en la
+          integración de metodologías ágiles y gamificación en nuestros
+          programas de formación en HSEQ (Higiene, Seguridad, Medio Ambiente y
+          Calidad) combinando también tecnología y análisis de datos buscamos
+          impactar en las empresas en 360°.{" "}
+        </p>
+
+        <p className="md:text-left font-overpass mt-12 mb-10">
+          Creemos firmemente en que el aprendizaje se potencia cuando se combina
+          la innovación con la diversión, y es por eso que cada curso que
+          ofrecemos está diseñado para involucrar, motivar y capacitar a
+          nuestros participantes de una manera única. En Maxima Formación, no
+          solo adquieres conocimientos, ¡sino que te sumerges en una aventura de
+          aprendizaje que te inspirará a alcanzar tu máximo potencial! Cambiemos
+          en conjunto los paradigmas de la formación HSEQ.
         </p>
       </div>
       <div className="mt-8">

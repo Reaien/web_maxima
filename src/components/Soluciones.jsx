@@ -11,6 +11,7 @@ import { EscuelaRiesgosCriticos } from "../components/Soluciones/EscuelaRiesgosC
 import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.webp";
 import { NuestrosProgramas } from "./Soluciones/NuestrosProgramas.jsx";
 import { Maxima_360 } from "./Soluciones/Maxima_360.jsx";
+import { MaximaFlex } from "./Soluciones/MaximaFlex.jsx";
 
 const Soluciones = () => {
   return (
@@ -28,6 +29,7 @@ const Soluciones = () => {
         <Experiencias />
       </div>
       <Maxima_360 />
+      <MaximaFlex />
       <section className="flex justify-items-center text-center md:px-20 xl:px-80 ">
         <p className="text-xl font-overpass mt-20 mb-10">
           No esperes más para llevar la
