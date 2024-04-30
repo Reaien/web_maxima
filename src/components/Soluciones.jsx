@@ -10,6 +10,7 @@ import { EscuelaRiesgosCriticos } from "../components/Soluciones/EscuelaRiesgosC
 
 import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.webp";
 import { NuestrosProgramas } from "./Soluciones/NuestrosProgramas.jsx";
+import { Maxima_360 } from "./Soluciones/Maxima_360.jsx";
 
 const Soluciones = () => {
   return (
@@ -17,7 +18,7 @@ const Soluciones = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
-      <EscuelaRiesgosCriticos />
+      <EscuelaRiesgosCriticos id="cardPricing" />
       <NuestrosProgramas />
       <div id="escuelaVR">
         <EscuelaVR />
@@ -26,6 +27,7 @@ const Soluciones = () => {
       <div id="experiencias">
         <Experiencias />
       </div>
+      <Maxima_360 />
       <section className="flex justify-items-center text-center md:px-20 xl:px-80 ">
         <p className="text-xl font-overpass mt-20 mb-10">
           No esperes más para llevar la
@@ -37,10 +39,7 @@ const Soluciones = () => {
           más seguro y productivo hoy mismo.
         </p>
       </section>
-      <div
-        className="grid grid-rows-1 xl:grid-cols-3 mx-auto "
-        id="cardPricing"
-      >
+      <div className="grid grid-rows-1 xl:grid-cols-3 mx-auto ">
         <div className=" animate-fade-left animate-duration-[3000ms] ">
           <CardPricing
             colorListon="#C0C0C0"
