@@ -32,6 +32,7 @@ export const EscuelaRiesgosCriticos = () => {
           </p>
           <div className="grid md:grid-rows-2 md:grid-cols-2 gap-5 mt-5 mb-5">
             <BotonEscuelaRiesgos_01 />
+
             <BotonEscuelaRiesgos_02 />
             <BotonEscuelaRiesgos_03 />
             <BotonEscuelaRiesgos_04 />

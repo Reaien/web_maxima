@@ -10,12 +10,12 @@ import { TendencyIcon } from "../icons/TendencyIcon";
 export const NuestrosProgramas = () => {
   return (
     <>
-      <section className="flex justify-center mx-auto font-bold font-overpass text-5xl md:text-7xl">
+      <section className="flex justify-center mx-auto font-bold font-overpass text-5xl md:text-7xl text-center mb-20">
         Nuestros programas
       </section>
-      <section className="grid grid-cols-2  animate-fade md:animate-once md:animate-duration-[5000ms]">
+      <section className="grid md:grid-cols-2  animate-fade md:animate-once md:animate-duration-[5000ms]">
         <div className="flex justify-center items-center  flex-col ">
-          <p className="font-bold text-9xl font-overpass text-emerald-600">
+          <p className="font-bold text-6xl md:text-9xl font-overpass text-emerald-600">
             100 +
           </p>
           <p className="w-72">
@@ -24,7 +24,7 @@ export const NuestrosProgramas = () => {
           </p>
         </div>
 
-        <section className="grid grid-rows-1 md:grid-cols-3 text-center mb-20 md:-ml-48">
+        <section className="grid md:grid-cols-3 text-center mb-20 md:-ml-48">
           <div className="mt-10  md:px-16 px-10">
             <div className="w-[60px] h-[60px] bg-amber-400 shadow-xl rounded-2xl flex items-center border border-slate-950/5 mx-auto animate-fade-up md:animate-once md:animate-duration-[2000ms]">
               <SeguridadIcon className="mx-auto w-[60px] h-[60px] text-white" />

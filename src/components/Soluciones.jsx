@@ -12,6 +12,7 @@ import soluciones_maxima_cover from "../assets/images/soluciones_maxima_cover.we
 import { NuestrosProgramas } from "./Soluciones/NuestrosProgramas.jsx";
 import { Maxima_360 } from "./Soluciones/Maxima_360.jsx";
 import { MaximaFlex } from "./Soluciones/MaximaFlex.jsx";
+import { Experience } from "./Soluciones/Experience.jsx";
 
 const Soluciones = () => {
   return (
@@ -19,19 +20,21 @@ const Soluciones = () => {
       <NavBar />
       <ToggleMenuXL />
       <ImageBar title="Soluciones" imageURL={soluciones_maxima_cover} />
-      <EscuelaRiesgosCriticos id="cardPricing" />
+      <div id="cardPricing">
+        <EscuelaRiesgosCriticos />
+      </div>
       <NuestrosProgramas />
-      <div id="escuelaVR">
+      <div id="experiencias">
         <EscuelaVR />
       </div>
-
-      <div id="experiencias">
-        <Experiencias />
+      <Experiencias />
+      <div id="escuelaVR">
+        <Maxima_360 />
       </div>
-      <Maxima_360 />
+      <Experience />
       <MaximaFlex />
       <section className="flex justify-items-center text-center md:px-20 xl:px-80 ">
-        <p className="text-xl font-overpass mt-20 mb-10">
+        <p className="text-3xl font-overpass mt-20 mb-10">
           No esperes más para llevar la
           <span className="text-emerald-600 "> formación </span>de tu empresa al
           siguiente nivel. Suscríbete a Máxima Formación eTraining y aprovecha

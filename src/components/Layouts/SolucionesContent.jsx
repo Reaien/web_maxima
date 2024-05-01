@@ -78,25 +78,6 @@ export const SolucionesContent = () => {
               </p>
             </div>
           </button>
-
-          <button
-            onClick={() => scrollToEscuelaVRContent()}
-            onMouseEnter={() => handleMouseEnter("imagenCurso")}
-            onMouseLeave={handleMouseLeave}
-            className="mb-3 hover:text-emerald-600 hover:underline"
-          >
-            <div>
-              <p className="mt-10 text-left font-bold font-overpass uppercase">
-                Máxima formación 360°
-              </p>
-            </div>
-            <div className="text-left">
-              <p className="text-sm">
-                "Descubre nuestro programa de formación de alto impacto y
-                transforma la trayectoria profesional de tus empleados."
-              </p>
-            </div>
-          </button>
           <button
             onClick={() => scrollToExperienciasContent()}
             onMouseEnter={() => handleMouseEnter("imagenVR")}
@@ -113,6 +94,24 @@ export const SolucionesContent = () => {
                 "Sumérgete en la experiencia única de nuestra Escuela de Riesgos
                 con Realidad Virtual y descubre una forma innovadora y
                 vanguardista de formación."
+              </p>
+            </div>
+          </button>
+          <button
+            onClick={() => scrollToEscuelaVRContent()}
+            onMouseEnter={() => handleMouseEnter("imagenCurso")}
+            onMouseLeave={handleMouseLeave}
+            className="mb-3 hover:text-emerald-600 hover:underline"
+          >
+            <div>
+              <p className="mt-10 text-left font-bold font-overpass uppercase">
+                Máxima formación 360°
+              </p>
+            </div>
+            <div className="text-left">
+              <p className="text-sm">
+                "Descubre nuestro programa de formación de alto impacto y
+                transforma la trayectoria profesional de tus empleados."
               </p>
             </div>
           </button>
