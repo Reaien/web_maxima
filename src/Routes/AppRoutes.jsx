@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../components/Home.jsx";
 import PorQueMaxima from "../components/PorQueMaxima.jsx";
 import Soluciones from "../components/Soluciones.jsx";

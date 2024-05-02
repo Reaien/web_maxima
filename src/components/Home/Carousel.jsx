@@ -25,14 +25,13 @@ export const Carousel = () => {
             Diseñamos <span className="text-emerald-600">experiencias </span>{" "}
             únicas e innovadoras para la{" "}
             <span className="text-emerald-600">seguridad y salud</span> de tu
-            equipo de trabajo{" "}
-            <span className="text-emerald-600">seguridad y salud</span>
+            equipo de trabajo.
           </>
         ),
         subTitle: (
           <>
-            Potencia tu empresa con los métodos más sostenibles, interactivos y
-            avanzados del mercado.
+            Capacitamos en HSEQ con una App con función offline, VR y data en
+            tiempo real a trabajadores de primera línea.
           </>
         ),
 
@@ -44,15 +43,15 @@ export const Carousel = () => {
       content: {
         title: (
           <>
-            Capaciate en HSEQ a través de{" "}
+            Capacítate en HSEQ a través de{" "}
             <span className="text-emerald-600">metodologías ágiles </span>y
             gamificación como lo hacen grandes empresas y miles de personas{" "}
           </>
         ),
         subTitle: (
           <>
-            Fortalece tu empresa, somos la clave para tener un entorno laboral
-            más seguro e impular tu crecimiento profesional y emprendedor.
+            Combina Agile Learning y la poderosa herramienta de la gamificación
+            LEGO Serious Play.
           </>
         ),
         buttonTitle: <>Comunícate con nosotros</>,
@@ -68,7 +67,11 @@ export const Carousel = () => {
           </>
         ),
         subTitle: (
-          <>Transformamos vidas a través del conocimiento y la experiencia.</>
+          <>
+            Programas de formación para ejecutivo/as, supervisore/as y
+            trabajadore/as de primera línea guiados por especialistas en
+            andragogía y cultura organizacional.
+          </>
         ),
         buttonTitle: <>Comunícate con nosotros</>,
       },

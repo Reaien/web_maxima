@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 export const SolucionesContent = () => {
   const navigate = useNavigate();
-  const [hoveredImage, setHoveredImage] = useState(null);
+  const [hoveredImage, setHoveredImage] = useState(false);
 
   const handleMouseEnter = (image) => {
     setHoveredImage(image);
   };
 
   const handleMouseLeave = () => {
-    setHoveredImage(null);
+    setHoveredImage(false);
   };
 
   //fncion para scroll a componente CardPricing situado en /soluciones
@@ -121,7 +121,7 @@ export const SolucionesContent = () => {
           {hoveredImage && isWideScreen && (
             <img
               className="md:w-[530px] animate-fade-left rounded-md shadow-lg"
-              src={`../src/assets/images/${hoveredImage}.webp`}
+              src={`/images/${hoveredImage}.webp`}
               alt="imagen"
             />
           )}
